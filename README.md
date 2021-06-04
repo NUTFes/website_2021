@@ -1,4 +1,7 @@
 # website_2021
+## 制作コンセプト
+[HackMD](https://hackmd.io/@kobayashi-ryota/HyvOAgXwd)
+
 ## ワイヤーフレーム(Figma)
 Figmaにログインしていなければ閲覧のみ可能です。編集権限が必要な場合はRyotakobayashに連絡してください <br>
 [スマホ版レイアウト](https://www.figma.com/file/OZ6HOJcTBCmReeEUfpbI7o/40thHP_%E3%82%B9%E3%83%9E%E3%83%9B?node-id=0%3A1)<br>
