@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.Cancellation__doc {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #333333;
+}
+
+.display-none {
+    display: none;
+}
+
+.Header__main-img {
+    padding: none;
+}

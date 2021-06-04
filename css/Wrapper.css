@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+.Wrapper {
+    max-width: 1000px;
+    margin: 200px auto;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+
+/* モバイル版
+-------------------------------------------------------- */
+@media screen and (max-width: 750px) {
+    .Wrapper {
+        max-width: 90vw;
+        margin: 100px auto;
+    }
+}
+

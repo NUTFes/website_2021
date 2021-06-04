@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.What {
+    color: #333333;
+    text-align: center;
+    margin: 0 auto 250px;
+}
+
+.What__title {
+    font-size: 90px;
+    margin-bottom: 70px;
+}
+
+.What__title__underline {
+    text-decoration : underline;
+}
+
+
+.What__massage-fr {
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.What__massage-bg {
+    font-size: 30px;
+}
+
+/* モバイル版750以下
+-------------------------------------------------------- */
+@media screen and (max-width: 750px) {
+
+.What {
+    max-width: 550px;
+}
+
+.What__title {
+    font-size: 70px;
+    margin-bottom: 70px;
+}
+
+.What__massage-fr {
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+
+.What__massage-bg {
+    font-size: 25px;
+}
+
+}
+
+
+/* モバイル版600px以下
+-------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .What {
+        max-width: 100%;
+        margin: 0px auto 150px;
+    }
+    
+    .What__title {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .What__massage-fr {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .What__massage-bg {
+        font-size: 20px;
+    }
+}
+

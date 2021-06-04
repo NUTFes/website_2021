@@ -1,0 +1,15 @@
+1. Embed
+To embed these fonts into a webpage, copy this code into the <head> of your HTML document.
+STANDARD @Import
+
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+
+
+2. Specify in CSS
+Use the following CSS properties to specify these families:
+
+    font-family: 'Sawarabi Mincho', sans-serif;
+
+    
+For examples of how fonts can be added to webpages, see the getting started guide.

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+    .Last-year {
+        margin:0 auto;
+        text-align: center;
+        color: #333333;
+    }
+
+    .Last-year__Head__title {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .Last-year__Head__text {
+        font-size: 20px;
+    }
+
+    .Last-year__Body {
+        max-width: 1000px;
+        margin: 50px auto 250px;
+    }
+/* モバイル版
+-------------------------------------------------------- */
+@media screen and (max-width: 750px) {
+
+    .Last-year {
+        margin:0 auto;
+        text-align: center;
+        color: #333333;
+    }
+    
+    .Last-year__Head__title {
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .Last-year__Head__text {
+        font-size: 20px;
+    }
+
+    .Last-year__Body{
+        max-width: 500px;
+        margin: 45px auto 250px;
+    }
+}
+
+/* モバイル版
+-------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+    .Last-year {
+        margin:0 auto 150px;
+        color: #333333;
+    }
+    
+    .Last-year__Head__title {
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .Last-year__Head__text {
+        font-size: 15px;
+        text-align: center;
+    }
+}

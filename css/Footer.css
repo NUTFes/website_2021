@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.Footer {
+    background-color: #333333;
+    text-align: center;
+    padding: 26px 0;
+}
+
+.Footer__copy {
+    color: #ffffff;
+    font-size: 15px;
+}
