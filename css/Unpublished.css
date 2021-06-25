@@ -1,7 +1,0 @@
-@charset "utf-8";
-
-.Unpublished {
-    text-decoration: line-through;
-    pointer-events:none;/*リンクを非リンクに変える*/
-    cursor:default;/*マウスカーソルを矢印のまま変えない*/
-}

@@ -1,0 +1,9 @@
+.LP-wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.intro-card {
+  scroll-snap-align: center;
+}
