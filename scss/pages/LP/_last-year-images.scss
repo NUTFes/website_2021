@@ -1,0 +1,7 @@
+.last-year-images {
+  column-count: 3;
+  &__item {
+  break-inside: avoid;
+  margin-bottom: 30px;
+  }
+}

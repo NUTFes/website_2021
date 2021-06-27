@@ -1,0 +1,73 @@
+.intro-card {
+  display: flex;
+  width: 94vw;
+  height: 97vh;
+  margin: 3vw auto 6vw;
+  background-size: cover;
+  box-shadow: 5px 5px 10px #A3B1C6, -5px -5px 4px #fff;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+  &.hero {
+    @include LP-gradation;
+  }
+  &.shop {
+    @include LP-gradation, url(../images/shop.JPG);
+  }
+  &.grobal {
+    @include LP-gradation, url(../images/grobal.JPG);
+  }
+  &.guest {
+    @include LP-gradation, url(../images/guest.JPG);
+  }
+  &.event {
+    @include LP-gradation, url(../images/bingo.JPG);
+  }
+  &.last-year {
+    @include LP-gradation;
+  }
+  &__txt {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__header {
+    margin-bottom: 30px ;
+    &__title {
+      font-weight: 400;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      white-space: nowrap;
+      &--en {
+        font-size: 7rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        white-space: nowrap;
+      }
+    }
+    &__date {
+      display: inline;
+      padding: 0 2rem 0.5rem;
+      font-size: 2rem;
+      border: solid 1px white;
+    }
+    &__subtitle {
+      font-size: 2rem;
+      line-height: 3rem;
+      white-space: nowrap;
+    }
+  }
+  &__body {
+    font-size: 2.5rem;
+  }
+  &__copy {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  &__subtitle {
+    line-height: 3.5rem;
+  }
+}

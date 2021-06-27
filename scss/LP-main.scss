@@ -1,0 +1,19 @@
+/* base */
+@import "./base/reset";
+@import "./base/html";
+@import "./base/font";
+@import "./base/mixin";
+
+/* components */
+/* common */
+@import "./components/common/header";
+
+/* parts */
+@import "./components/parts/learn-more";
+@import "./components/parts/arrow";
+
+/* pages */
+@import "./pages/LP/LP";
+@import "./pages/LP/intro-card";
+@import "./pages/LP/full-page-scroll";
+@import "./pages/LP/last-year-images";
