@@ -1,7 +1,20 @@
 .last-year-images {
   column-count: 3;
+  width: 90%;
+  max-width: max-content;
   &__item {
-  break-inside: avoid;
-  margin-bottom: 30px;
+    color: #333;
+    padding: 3px;
+    border-radius: 3%;
+    background: white;
+    display: block;
+    max-width: 100%;
+    break-inside: avoid;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      border-radius: 3%;
+      margin-bottom: 5px;
+    }
   }
 }

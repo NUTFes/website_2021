@@ -1,5 +1,8 @@
 .intro-card {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 94vw;
   height: 97vh;
   margin: 3vw auto 6vw;
@@ -10,32 +13,35 @@
   text-align: center;
   position: relative;
   &.hero {
-    @include LP-gradation;
+      background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
+;
   }
   &.shop {
-    @include LP-gradation, url(../images/shop.JPG);
+      background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
+ url(../images/shop.JPG);
   }
   &.grobal {
-    @include LP-gradation, url(../images/grobal.JPG);
+      background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
+ url(../images/grobal.JPG);
   }
   &.guest {
-    @include LP-gradation, url(../images/guest.JPG);
+      background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
+ url(../images/guest.JPG);
   }
   &.event {
-    @include LP-gradation, url(../images/bingo.JPG);
+      background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
+ url(../images/bingo.JPG);
   }
   &.last-year {
-    @include LP-gradation;
+      background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%);
   }
   &__txt {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 90%;
   }
   &__header {
-    margin-bottom: 30px ;
+    width: 100%;
+    margin-bottom: 30px;
     &__title {
       font-weight: 400;
       font-size: 4rem;
@@ -69,5 +75,9 @@
   }
   &__subtitle {
     line-height: 3.5rem;
+  }
+  &__logo {
+    display: block;
+    width: 60%;
   }
 }
