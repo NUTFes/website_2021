@@ -1,0 +1,22 @@
+.line {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  font-size: 20px;
+  font-weight: 100;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: black;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+}

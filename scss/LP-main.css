@@ -100,6 +100,11 @@ html {
   background-color: #E0E5EC;
 }
 
+.LP-wrapper {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+}
+
 /* components */
 /* common */
 /* parts */
@@ -161,11 +166,9 @@ html {
   width: 100%;
   height: 100vh;
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 100;
 }
 
-futter {
+.LP-futter {
   display: none;
 }
 
