@@ -1,0 +1,16 @@
+#border {
+  position: absolute;
+  width: 90vw;
+  height: 94vh;
+  border: solid 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.intro-card {
+  &__coming-soon {
+    font-size: 2.5rem;
+    margin: 40px 0 30px;
+  }
+}

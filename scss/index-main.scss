@@ -13,11 +13,15 @@
 @import "./components/common/line-title";
 @import "./components/common/event-catalog";
 
-/* parts */
-
-
 /* pages */
 @import "./pages/index/news";
+
+
+/* parts */
+
+/* utils */
+@import "./utils/coming-soon";
+
 
 // 臨時追加scss
 // 公開できる記事ができたら消すこと:小林
