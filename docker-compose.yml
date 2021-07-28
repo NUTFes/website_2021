@@ -13,4 +13,6 @@ services:
     volumes:
       - ./certs:/var/lib/https-portal
       - ./page:/var/www/vhosts/www.nutfes.net
+      - ./nginx/www.nutfes.net.conf.erb:/var/lib/nginx-conf/www.nutfes.net.conf.erb:ro
+      - ./nginx/www.nutfes.net.ssl.conf.erb:/var/lib/nginx-conf/www.nutfes.net.ssl.conf.erb:ro
       #- /var/run/docker.sock:/var/run/docker.sock:ros
