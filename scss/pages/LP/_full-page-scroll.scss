@@ -1,4 +1,7 @@
-.LP-wrapper {
+.full-page-scroll {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
