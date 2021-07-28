@@ -1,6 +1,7 @@
 .share-icons {
     width: min-content;
     display: flex;
+    z-index: 999;
     &__item {
         width: 50px;
         margin: 20px 30px;
