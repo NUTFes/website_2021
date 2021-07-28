@@ -1,0 +1,16 @@
+version: '3'
+services:
+  https-portal:
+    image: steveltn/https-portal:1
+    container_name: 'https-portal-web'
+    ports:
+      - '8022:80'
+      - '44322:443'
+    environment:
+      DOMAINS: ' www.nutfes.net '
+      STAGE: 'staging' # Don't use production until staging works
+      #FORCE_RENEW: 'true'
+    volumes:
+      - ./certs:/var/lib/https-portal
+      - ./page:/var/www/vhosts/www.nutfes.net
+      #- /var/run/docker.sock:/var/run/docker.sock:ros
