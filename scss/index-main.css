@@ -109,7 +109,7 @@ html {
   min-width: 320px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-color: #fff;
   border-radius: 1.5rem;
   text-align: center;
@@ -189,6 +189,10 @@ html {
   right: 0;
 }
 
+.event-catalog {
+  margin: 0 auto 6rem;
+}
+
 .event-catalog__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,10 +219,20 @@ html {
   position: absolute;
   bottom: 0;
   right: 0;
+  border-radius: 0 0 15px 0;
   padding: 10px;
   font-size: 15px;
   background-color: rgba(51, 51, 51, 0.3);
   color: white;
+}
+
+#randomImg {
+  width: 320px;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url(../images/company-images/test1.jpeg);
+  background-position: center center;
+  background-size: cover;
 }
 
 /* pages */
@@ -226,7 +240,7 @@ html {
   display: block;
   width: 85%;
   font-size: 1.5rem;
-  margin: 2rem auto 6rem;
+  margin: 0 auto 6rem;
 }
 
 .news__body {

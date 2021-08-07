@@ -1,7 +1,8 @@
 #randomImg {
     width: 320px;
     height: 100px;
-    background-image: url(/image01.jpg); //背景画像の初期値
+    margin: 0 auto;
+    background-image: url(../images/company-images/test1.jpeg); //背景画像の初期値
     background-position: center center;
     background-size: cover;
   }

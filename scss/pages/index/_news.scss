@@ -2,7 +2,7 @@
     display: block;
     width: 85%;
     font-size: 1.5rem;
-    margin: 2rem auto 6rem;
+    @include Block;
     &__body {
         border: solid #333;
         border-width: 1px 0 ;
