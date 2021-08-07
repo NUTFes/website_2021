@@ -5,8 +5,10 @@
 @import "./base/mixin";
 @import "./base/wrapper";
 @import "./base/none";
+@import "./base/footer";
 
 /* components */
+@import "./components/common/hamburger-menu";
 @import "./components/common/hero";
 
 /* common */
