@@ -5,13 +5,16 @@
 @import "./base/mixin";
 @import "./base/wrapper";
 @import "./base/none";
+@import "./base/footer";
 
 /* components */
+@import "./components/common/hamburger-menu";
 @import "./components/common/hero";
 
 /* common */
 @import "./components/common/line-title";
 @import "./components/common/event-catalog";
+@import "./components/common/company-img";
 
 /* pages */
 @import "./pages/index/news";
