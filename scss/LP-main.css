@@ -116,6 +116,7 @@ html {
   padding: 1rem 2rem;
   border: solid 1px white;
   margin: 5rem auto 0;
+  display: none;
 }
 
 .arrow {
@@ -162,7 +163,7 @@ html {
 /* pages */
 /* 背景色の変更とか
 リンク色の変更とか */
-.LP-futter {
+.LP-footer {
   display: none;
 }
 
@@ -193,37 +194,34 @@ html {
 }
 
 .intro-card.hero {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(35, 0, 0, 0.7)), color-stop(40%, rgba(230, 35, 20, 0.7)), color-stop(90%, rgba(245, 230, 105, 0.7)));
-  background-image: linear-gradient(0deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
 }
 
 .intro-card.shop {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(244, 255, 74, 0.7)), color-stop(40%, rgba(55, 248, 119, 0.7)), color-stop(90%, rgba(41, 205, 248, 0.7))), url(../images/shop.JPG);
-  background-image: linear-gradient(0deg, rgba(244, 255, 74, 0.7) 10%, rgba(55, 248, 119, 0.7) 40%, rgba(41, 205, 248, 0.7) 90%), url(../images/shop.JPG);
+  /* background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
+ url(../images/shop.JPG); */
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/shop.JPG);
 }
 
 .intro-card.grobal {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(244, 255, 74, 0.7)), color-stop(40%, rgba(55, 248, 119, 0.7)), color-stop(90%, rgba(41, 205, 248, 0.7))), url(../images/grobal.JPG);
-  background-image: linear-gradient(0deg, rgba(244, 255, 74, 0.7) 10%, rgba(55, 248, 119, 0.7) 40%, rgba(41, 205, 248, 0.7) 90%), url(../images/grobal.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
 }
 
 .intro-card.guest {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(244, 255, 74, 0.7)), color-stop(40%, rgba(55, 248, 119, 0.7)), color-stop(90%, rgba(41, 205, 248, 0.7))), url(../images/guest.JPG);
-  background-image: linear-gradient(0deg, rgba(244, 255, 74, 0.7) 10%, rgba(55, 248, 119, 0.7) 40%, rgba(41, 205, 248, 0.7) 90%), url(../images/guest.JPG);
+  display: none;
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.JPG);
 }
 
 .intro-card.event {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(244, 255, 74, 0.7)), color-stop(40%, rgba(55, 248, 119, 0.7)), color-stop(90%, rgba(41, 205, 248, 0.7))), url(../images/bingo.JPG);
-  background-image: linear-gradient(0deg, rgba(244, 255, 74, 0.7) 10%, rgba(55, 248, 119, 0.7) 40%, rgba(41, 205, 248, 0.7) 90%), url(../images/bingo.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.JPG);
 }
 
 .intro-card.last-year {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(244, 255, 74, 0.7)), color-stop(40%, rgba(55, 248, 119, 0.7)), color-stop(90%, rgba(41, 205, 248, 0.7)));
-  background-image: linear-gradient(0deg, rgba(244, 255, 74, 0.7) 10%, rgba(55, 248, 119, 0.7) 40%, rgba(41, 205, 248, 0.7) 90%);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
 }
 
 .intro-card.futter {
-  background-color: #E0E5EC;
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
 }
 
 .intro-card__txt {
@@ -279,6 +277,7 @@ html {
 .intro-card__logo {
   display: block;
   width: 60%;
+  max-width: 500px;
 }
 
 .full-page-scroll {
@@ -296,12 +295,10 @@ html {
 }
 
 .last-year-images {
-  -webkit-column-count: 2;
-          column-count: 2;
-  width: 90%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  overflow-y: scroll;
+  width: 80%;
+  height: 60vh;
+  max-width: 700px;
 }
 
 .last-year-images__item {
@@ -322,6 +319,11 @@ html {
   margin-bottom: 5px;
 }
 
+.last-year-images__item p {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+}
+
 .share-icons {
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -330,6 +332,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   z-index: 999;
+  margin: 0 auto;
 }
 
 .share-icons__item {
