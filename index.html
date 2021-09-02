@@ -131,7 +131,31 @@
 
       </div><!-- イベント一覧の終わり -->
 
-      <div id="randomImg"></div>
+      <div>
+
+        <!-- 広告画像のランダム表示 -->
+        <script>
+          imgList = new Array();
+
+          imgList = ["test1.jpeg", "test2.jpeg", "test3.jpeg"]
+
+          const imgChange = () => {
+            r = Math.floor(Math.random() * imgList.length);
+
+            pic.src = "./images/company-images/" + imgList[r]
+            //document.write('<img src="./images/company-images/' + imgList[r] + '" />');
+            setTimeout("imgChange()", 3500)
+          }
+
+          window.onload = () => {
+            imgChange()
+          }
+
+        </script>
+
+        <img id=pic src="./images/company-images/test1.jpeg" />
+
+      </div>
 
     </div><!-- wrapperの終わり -->
 
@@ -149,6 +173,5 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="js/gura.js"></script>
   </body>
 </html>
