@@ -95,18 +95,17 @@ input, select {
   vertical-align: middle;
 }
 
-/* html {
-  font-size: 62.5%;
-  background-color: #E0E5EC;
-} */
+/* 画面幅が0-768pxの場合　*/
 @media screen and (max-width: 768px) {
   html {
     font-size: 20px;
     font-size: 2.60417vw;
+    /* ←の'fz_vw()'の値が，基準となる画面幅↑の時に，htmlタグのfont-sizeになる．以下同様*/
     background-color: #E0E5EC;
   }
 }
 
+/* 画面幅が768ｐｘ-1024pxの場合　*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   html {
     font-size: 10px;
@@ -115,6 +114,7 @@ input, select {
   }
 }
 
+/* 画面幅が1024px以上の場合 */
 @media screen and (min-width: 1024px) {
   html {
     font-size: 10px;
@@ -512,7 +512,7 @@ body {
 }
 
 .intro-card.exhibition {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
 }
 
 .intro-card.futter {
