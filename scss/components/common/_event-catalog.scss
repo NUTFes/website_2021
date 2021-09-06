@@ -11,7 +11,20 @@
       height: 153px;
       border-radius: 15px;
       margin: 7px;
-      @include gradation;
+      background-size: cover;
+      &.event {
+        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
+    url(../images/bingo.JPG);
+        
+      }
+      &.stage {
+        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
+    url(../images/street-style.JPG);
+      }
+      &.exhibition {
+        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
+    url(../images/grobal.JPG);
+      }
       &__title {
         position: absolute;
         bottom: 0;
