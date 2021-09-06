@@ -95,9 +95,32 @@ input, select {
   vertical-align: middle;
 }
 
-html {
-  font-size: 62.5%;
-  background-color: #E0E5EC;
+/* 画面幅が0-768pxの場合　*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 20px;
+    font-size: 2.60417vw;
+    /* ←の'fz_vw()'の値が，基準となる画面幅↑の時に，htmlタグのfont-sizeになる．以下同様*/
+    background-color: #E0E5EC;
+  }
+}
+
+/* 画面幅が768ｐｘ-1024pxの場合　*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 10px;
+    font-size: 1.30719vw;
+    background-color: #E0E5EC;
+  }
+}
+
+/* 画面幅が1024px以上の場合 */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 10px;
+    font-size: 0.97656vw;
+    background-color: #E0E5EC;
+  }
 }
 
 html {
@@ -160,6 +183,15 @@ html {
   transform: rotate(45deg);
 }
 
+.white-box {
+  position: absolute;
+  width: 90vw;
+  height: 94vh;
+  border: solid 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* pages */
 /* 背景色の変更とか
 リンク色の変更とか */
@@ -197,31 +229,20 @@ html {
   background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
 }
 
-.intro-card.shop {
-  /* background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
- url(../images/shop.JPG); */
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/shop.JPG);
-}
-
-.intro-card.grobal {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
-}
-
-.intro-card.guest {
-  display: none;
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.JPG);
-}
-
 .intro-card.event {
   background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.JPG);
 }
 
-.intro-card.last-year {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
+.intro-card.stage {
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.JPG);
+}
+
+.intro-card.exhibition {
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
 }
 
 .intro-card.futter {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.8) 10%, rgba(230, 35, 20, 0.8) 40%, rgba(245, 230, 105, 0.8) 90%);
 }
 
 .intro-card__txt {
@@ -271,13 +292,27 @@ html {
 }
 
 .intro-card__subtitle {
+  font-size: 2.5rem;
   line-height: 3.5rem;
+}
+
+.intro-card__list {
+  list-style: none;
+  margin-bottom: 6rem;
+}
+
+.intro-card__list__item {
+  margin-bottom: 1rem;
+}
+
+.intro-card__list__item:last-child {
+  margin: 0;
 }
 
 .intro-card__logo {
   display: block;
   width: 60%;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .full-page-scroll {
