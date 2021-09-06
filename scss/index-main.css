@@ -403,8 +403,19 @@ body {
   height: 153px;
   border-radius: 15px;
   margin: 7px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#14366f), to(#63e5c5));
-  background-image: linear-gradient(0deg, #14366f 0%, #63e5c5 100%);
+  background-size: cover;
+}
+
+.event-catalog__body__card.event {
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.JPG);
+}
+
+.event-catalog__body__card.stage {
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/street-style.JPG);
+}
+
+.event-catalog__body__card.exhibition {
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
 }
 
 .event-catalog__body__card__title {
