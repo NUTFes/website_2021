@@ -1,4 +1,55 @@
-html {
+/* html {
   font-size: 62.5%;
   background-color: #E0E5EC;
+} */
+
+@media screen and (max-width:768px) {
+  @function get_vw($size, $viewport: 768){
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+  }
+  
+  @mixin fz_vw($font_size: 10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+  }
+
+  html {
+    @include fz_vw(20);
+    background-color: #E0E5EC;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  @function get_vw($size, $viewport: 765) {
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+  }
+  
+  @mixin fz_vw($font_size: 10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+  }
+
+  html {
+    @include fz_vw(10);
+    background-color: #E0E5EC;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  @function get_vw($size, $viewport: 1024) {
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+  }
+  
+  @mixin fz_vw($font_size: 10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+  }
+
+  html {
+    @include fz_vw(10);
+    background-color: #E0E5EC;
+  }
 }

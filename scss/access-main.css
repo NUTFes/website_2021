@@ -95,9 +95,32 @@ input, select {
   vertical-align: middle;
 }
 
-html {
+/* html {
   font-size: 62.5%;
   background-color: #E0E5EC;
+} */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 20px;
+    font-size: 2.60417vw;
+    background-color: #E0E5EC;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 10px;
+    font-size: 1.30719vw;
+    background-color: #E0E5EC;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 10px;
+    font-size: 0.97656vw;
+    background-color: #E0E5EC;
+  }
 }
 
 html {
