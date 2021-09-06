@@ -298,11 +298,15 @@ html {
 
 .intro-card__list {
   list-style: none;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .intro-card__list__item {
-  margin: 3px;
+  margin-bottom: 1rem;
+}
+
+.intro-card__list__item:last-child {
+  margin: 0;
 }
 
 .intro-card__logo {

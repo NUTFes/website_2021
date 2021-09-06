@@ -74,9 +74,12 @@
   }
   &__list {
     list-style: none;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     &__item {
-      margin: 3px;
+      margin-bottom: 1rem;
+      &:last-child {
+        margin: 0;
+      }
     }
   }
   &__logo {
