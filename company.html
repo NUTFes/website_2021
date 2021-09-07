@@ -17,7 +17,7 @@
   />
   
   <!-- css -->
-  <link rel="stylesheet" href="scss/access-main.css" />
+  <link rel="stylesheet" href="scss/company-main.css" />
   
   <!-- favicon -->
   <link rel="icon" type="image/png" href="images//////////" />
@@ -46,54 +46,47 @@
   
   <div class="hero">
     <div class="hero__txt">
-      <h2 class="hero__txt__title">アクセス</h2>
+      <h2 class="hero__txt__title">協賛企業紹介</h2>
     </div>
   </div>
   
   <div class="wrapper">
-    <!-- 交通手段 -->
-    <div class="transportation">
-      <h3 class="transportation__title line">交通手段</h3>
-      <table>
-        <tbody>
-          <tr>
-            <th>電車</th>
-            <td data-label="詳細" class="txt">JR東京駅からJR長岡駅まで、上越新幹線で約90分</td>
-          </tr>
-          <tr>
-            <th>高速道路</th>
-            <td data-label="詳細" class="txt">関越自動車道、北陸自動車道長岡IC.から約5分</td>
-          </tr>
-          <tr>
-            <th>バス</th>
-            <td data-label="詳細" class="txt">長岡駅大手口7番線から技大前行き乗車約30分</td>
-          </tr>
-          <tr>
-            <th>タクシー</th>
-            <td data-label="詳細" class="txt">長岡駅大手口7番線から技大前行き乗車約30分</td>
-          </tr>
-        </tbody>
-      </table>   
-    </div><!-- transportationの終わり -->
-    <!-- 所在地 -->
-    <div class="location">
-      <h3 class="location__title line">所在地</h3>
-      <div class="location__body">
-        <p class="location__body__copy">
-          〒940-2183<br>
-          新潟県長岡市上富岡1603-1
-        </p>
-        <div class="location__body__map">
-          <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1bxN-GuSA_5BS91taGGf58RlD_63uBGb5"></iframe>
-        </div>
-      </div>
-    </div><!-- locationの終わり -->
-    <!-- 協賛広告 -->
-    <div id="randomImg"></div>
+    <!-- トップメッセージ -->
+    <p class="top-message">
+      第40回技大祭にご協賛いただいた企業の皆様<br>
+      順不同，敬称略
+    </p>
+
+    <!-- 協賛企業一覧 -->
+    <ul class="company-list">
+      <li class="company-list__item">長岡新聞</li>
+      <li class="company-list__item">生活情報新聞社</li>
+      <li class="company-list__item">生活情報新聞社生活情報新聞社</li>  
+    </ul>
+    
+    <!-- バナー広告 -->
+    <div>
+      <!-- 広告画像のランダム表示 -->
+      <script>
+        imgList = new Array();
+        imgList = ["test1.jpeg", "test2.jpeg", "test3.jpeg"]
+        const imgChange = () => {
+          r = Math.floor(Math.random() * imgList.length);
+          pic.src = "./images/company-images/" + imgList[r]
+          //document.write('<img src="./images/company-images/' + imgList[r] + '" />');
+          setTimeout("imgChange()", 3500)
+        }
+        window.onload = () => {
+          imgChange()
+        }
+      </script>
+      <!-- 最初に表示される画像 -->
+      <img id=pic src="./images/company-images/test1.jpeg" />
+    </div>
   </div><!-- wrapperの終わり -->
   
   <footer>
-    <div class="footer"><!-- none -->
+    <div class="footer">
       <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
       <ul class="footer__list">
         <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
