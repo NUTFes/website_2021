@@ -13,7 +13,7 @@
   text-align: center;
   position: relative;
   &.hero {
-    background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%)
+    background-image: linear-gradient(-45deg, rgba(35,0,0,0.8) 10%, rgba(230,35,20,0.8) 40%, rgba(245,230,105,0.8) 90%)
   }
   &.event {
   background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
@@ -36,7 +36,7 @@
   }
   &__header {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     &__title {
       font-weight: 400;
       font-size: 4rem;
@@ -59,6 +59,9 @@
       font-size: 2rem;
       line-height: 3rem;
       white-space: nowrap;
+      &--times {
+        font-size: 1.5rem;
+      }
     }
   }
   &__body {
@@ -71,10 +74,11 @@
   &__subtitle {
     font-size: 2.5rem;
     line-height: 3.5rem;
+    margin: 5rem 0;
   }
   &__list {
     list-style: none;
-    margin-bottom: 6rem;
+    margin: 3.5rem 0;
     &__item {
       margin-bottom: 1rem;
       &:last-child {

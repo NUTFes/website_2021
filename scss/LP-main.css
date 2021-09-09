@@ -130,6 +130,33 @@ html {
 
 /* components */
 /* common */
+.line {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.line::before, .line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+
+.line::before {
+  left: 0;
+}
+
+.line::after {
+  right: 0;
+}
+
 /* parts */
 .learn-more {
   width: -webkit-max-content;
@@ -226,7 +253,7 @@ html {
 }
 
 .intro-card.hero {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.8) 10%, rgba(230, 35, 20, 0.8) 40%, rgba(245, 230, 105, 0.8) 90%);
 }
 
 .intro-card.event {
@@ -252,7 +279,7 @@ html {
 
 .intro-card__header {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .intro-card__header__title {
@@ -282,6 +309,10 @@ html {
   white-space: nowrap;
 }
 
+.intro-card__header__subtitle--times {
+  font-size: 1.5rem;
+}
+
 .intro-card__body {
   font-size: 2.5rem;
 }
@@ -294,11 +325,12 @@ html {
 .intro-card__subtitle {
   font-size: 2.5rem;
   line-height: 3.5rem;
+  margin: 5rem 0;
 }
 
 .intro-card__list {
   list-style: none;
-  margin-bottom: 6rem;
+  margin: 3.5rem 0;
 }
 
 .intro-card__list__item {
@@ -373,5 +405,14 @@ html {
 .share-icons__item {
   width: 50px;
   margin: 20px 30px;
+}
+
+/* utils */
+.line--LP {
+  text-wrap: nowrap;
+}
+
+.line--LP::before, .line--LP::after {
+  background-color: white;
 }
 /*# sourceMappingURL=LP-main.css.map */
