@@ -8,15 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- デバイスの横幅に合わせる -->
   <title>紹介ページ</title>
-
+  
   <!-- link -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
-    rel="stylesheet">
-
+  rel="stylesheet">
+  
   <!-- css -->
   <link rel="stylesheet" href="scss/LP-main.css">
-
+  
   <!-- favicon -->
   <link rel="icon" type="image/png" href="images//////////"><!-- 後で画像入れといて -->
 </head>
@@ -24,152 +24,130 @@
 <body>
   <div class="LP-wrapper full-page-scroll">
     <!-- LPのトップ -->
-    < class="intro-card hero">
-        <div class="intro-card__txt">
-          <div class="intro-card__header">
-            <h2 class="intro-card__header__title--en">NUT FES</h2>
-            <p class="intro-card__header__date">2021.10.03 [SUN]</p>
-          </div>
-          <div class="intro-card__body">
-            <p class="intro-card__subtitle">
-              PRODUCED<br>
-              by<br>
-              NUT Students
-            </p>
-          </div>
-          <a class="arrow" href="#shop">
-            <!-- 矢印アイコン -->
-          </a>
-        </div>  
-    </div>
-
-    <!-- 模擬店・展示 -->
-    <div class="intro-card shop" id="shop">
+    <div class="intro-card hero">
+      <div class="white-box"></div>
       <div class="intro-card__txt">
         <div class="intro-card__header">
-          <h2 class="intro-card__header__title">模擬店・展示</h2>
-          <p class="intro-card__header__subtitle">例年多数の団体が参加！</p>
+          <h2 class="intro-card__header__title--en">NUT FES</h2>
+          <p class="intro-card__header__date">2021.10.03 [SUN]</p>
         </div>
         <div class="intro-card__body">
+          <p class="intro-card__subtitle">
+            オンライン<br>
+            ×<br>
+            現地(技大関係者のみ)
+          </p>
           <p class="intro-card__copy">
-            学内のサークルや研究室,<br>
-            他大学の学園祭実行委員会,<br>
-            地域の団体の方々によって様々な模擬店,展示が行われます！
+            現地での開催は技大生,技大教員のみ参加可能
           </p>
         </div>
-        <p class="learn-more">詳しく見る ></p>
-        <a class="arrow" href="#grobal">
-          <!-- 矢印アイコン -->
-        </a>
-      </div>
-    </div>
-
-    <!-- 国際祭り -->
-    <div class="intro-card grobal" id="grobal">
-      <div class="intro-card__txt">
-        <div class="intro-card__header">
-          <h2 class="intro-card__header__title">国際祭り</h2>
-          <p class="intro-card__header__subtitle">世界の文化に触れよう！</p>
-        </div>
-        <div class="intro-card__body">
-          <p class="intro-card__copy">
-            世界から集まった留学生が催す一大イベント”国際祭り”国際祭りを通して各国の魅力の一端を感じよう！
-          </p>
-        </div>
-        <p class="learn-more">詳しく見る ></p>
-        <a class="arrow" href="#guest">
-          <!-- 矢印アイコン -->
-        </a>
-      </div>
-    </div>
-
-    <!-- ゲスト企画 -->
-    <div class="intro-card guest" id="guest">
-      <div class="intro-card__txt">
-        <div class="intro-card__header">
-          <h2 class="intro-card__header__title">ゲスト企画</h2>
-          <p class="intro-card__header__subtitle">現在交渉中</p>
-        </div>
-        <div class="intro-card__body">
-          <p class="intro-card__copy">
-            過去ゲストの確認は<br>
-            下のリンクから！
-          </p>
-        </div>
-        <p class="learn-more">詳しく見る ></p>
         <a class="arrow" href="#event">
           <!-- 矢印アイコン -->
         </a>
-      </div>
+      </div>  
     </div>
-
+    
     <!-- 企画紹介 -->
     <div class="intro-card event" id="event">
       <div class="intro-card__txt">
         <div class="intro-card__header">
+          <p class="line line--LP">現地開催のみ</p>
           <h2 class="intro-card__header__title">企画紹介</h2>
-          <p class="intro-card__header__subtitle">技大祭の”楽しい”をお届け！</p>
+          <p class="intro-card__header__subtitle">技大発の「楽しい」をお届け!</p>
         </div>
         <div class="intro-card__body">
+          <ol class="intro-card__list">
+            <li class="intro-card__list__item">eスポーツ大会</li>
+            <li class="intro-card__list__item">麻雀大会</li>
+            <li class="intro-card__list__item">ポーカー大会</li>
+            <li class="intro-card__list__item">学籍番号抽選会</li>
+          </ol>
           <p class="intro-card__copy">
-            多数の団体による圧巻のパフォーマンスやクイズ大会,体験型脱出ゲーム等の参加型イベントも開催予定！<br>
-            豪華景品アリのイベントも！
+            技大生のみ参加可能!<br>
+            総額23万円分の景品をゲットしよう!
+          </p>
+        </div>
+        <p class="learn-more">詳しく見る ></p><!-- 非表示中 -->
+        <a class="arrow" href="#stage">
+          <!-- 矢印アイコン -->
+        </a>
+      </div>
+    </div>
+    
+    <!-- ステージ企画 -->
+    <div class="intro-card stage" id="stage">
+      <div class="intro-card__txt">
+        <div class="intro-card__header">
+          <p class="line line--LP">
+            オンライン/現地<br>
+            同時開催
+          </p>
+          <h2 class="intro-card__header__title">ステージ企画</h2>
+          <p class="intro-card__header__subtitle">様々な団体が一堂に集結！</p>
+        </div>
+        <div class="intro-card__body">
+          <ol class="intro-card__list">
+            <li class="intro-card__list__item">PMC</li>
+            <li class="intro-card__list__item">悠久太鼓愛好会つるかめ会
+            </li>
+            <li class="intro-card__list__item">NUTISA</li> 
+            <li class="intro-card__list__item">Street Style</li>
+          </ol>
+          <p class="intro-card__copy">
+            YouTubeにて配信予定!<br>
+            様々な団体による渾身のステージパフォーマンスをぜひご覧下さい！
           </p>
         </div>
         <p class="learn-more">詳しく見る ></p>
-        <a class="arrow" href="#last-year">
+        <a class="arrow" href="#exhibition">
           <!-- 矢印アイコン -->
         </a>
       </div>
     </div>
-
-    <!-- 当日の様子 -->
-    <div class="intro-card last-year" id="last-year">
-      <div class="intro-card__header">
-        <h2 class="intro-card__header__title">昨年の様子</h2>
-      </div>
-      <div class="last-year-images">
-        <div class="last-year-images__item">
-          <img src="images/bingo.JPG" alt="">
-          <p>#ビンゴ大会</p>
+    
+    <!-- 展示紹介 -->
+    <div class="intro-card exhibition" id="exhibition">
+      <div class="intro-card__txt">
+        <div class="intro-card__header">
+          <p class="line line--LP">
+            現地開催のみ
+          </p>
+          <h2 class="intro-card__header__title">展示紹介</h2>
+          <p class="intro-card__header__subtitle">技大で育まれた文化を見学！</p>
         </div>
-        <div class="last-year-images__item">
-          <img src="images/friend-park.JPG" alt="">
-          <p>#フレンドパーク</p>
+        <div class="intro-card__body">
+          <p class="intro-card__copy">
+            普段見ることが出来ないサークル活動の成果を見に行こう!!
+          </p>
         </div>
-        <div class="last-year-images__item">
-          <img src="images/grobal.JPG" alt="">
-          <p>#国際エリア</p>
-        </div>
-        <div class="last-year-images__item">
-          <img src="images/night-fes.JPG" alt="">
-          <p>#中夜祭</p>
-        </div>
-        <div class="last-year-images__item">
-          <img src="images/ryukyu.JPG" alt="">
-          <p>#悠久太鼓</p>
-        </div>
-        <div class="last-year-images__item">
-          <img src="images/street-style.JPG" alt="">
-          <p>#street-style</p>
-        </div>
-      </div>
+        <p class="learn-more">詳しく見る ></p>
         <a class="arrow" href="#futter">
           <!-- 矢印アイコン -->
         </a>
-    </div>
-
-    <!-- futter代わり -->
-    <div class="intro-card" id="futter">
-      <img class="intro-card__logo" src="images/logo/w-logo.png" alt="技大祭実行委員会のロゴマーク">
-      <div class="share-icons">
-        <a href="https://twitter.com/nut_fes"><img class="share-icons__item" src="images/icon/twitter.svg" alt="Twitter"></a>
-        <a href="https://www.instagram.com/nutfes/"><img class="share-icons__item" src="images/icon/instagram.svg" alt="Instagram"></a>
       </div>
     </div>
-
+    
+    <!-- futter代わり -->
+    <div class="intro-card futter" id="futter">
+      <img class="intro-card__logo" src="images/logo/w-logo.png" alt="技大祭実行委員会のロゴマーク">
+      <div class="intro-card__txt">
+        <div class="intro-card__header">
+          <h2 class="intro-card__header__title">coming soon</h2>
+        </div>
+        <div class="intro-card__body">
+          <p class="intro-card__copy">
+            公開できる情報がそろうまで技大祭実行委員会のSNSをお楽しみください．
+          </p>
+          <div class="share-icons">
+            <a href="https://twitter.com/nut_fes"><img class="share-icons__item" src="images/icon/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/nutfes/"><img class="share-icons__item" src="images/icon/instagram.svg" alt="Instagram"></a>
+          </div>
+        </div>
+      </div><!-- intro-card__text閉じ -->
+    </div><!-- futter閉じ -->
+    
   </div><!-- Wrapperの終わり -->
-
+  
   <footer>
     <div class="LP-footer">
       <p class="LP-footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>

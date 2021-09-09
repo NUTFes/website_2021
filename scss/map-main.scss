@@ -13,22 +13,12 @@
 
 /* common */
 @import "./components/common/line-title";
-@import "./components/common/event-catalog";
 @import "./components/common/company-img";
+@import "./components/common/map-size-img";
 
 /* pages */
-@import "./pages/index/news";
 
 
 /* parts */
 
 /* utils */
-@import "./utils/coming-soon";
-
-
-// 臨時追加scss
-// 公開できる記事ができたら消すこと:小林
-@import "./pages/LP/intro-card";
-@import "./pages/LP/share";
-@import "./pages/LP/full-page-scroll";
-// /臨時追加scss

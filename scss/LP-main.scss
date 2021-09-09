@@ -7,14 +7,19 @@
 /* components */
 /* common */
 @import "./components/common/header";
+@import "./components/common/line-title";
 
 /* parts */
 @import "./components/parts/learn-more";
 @import "./components/parts/arrow";
+@import "./components/parts/white-box";
 
 /* pages */
 @import "./pages/LP/LP";
 @import "./pages/LP/intro-card";
 @import "./pages/LP/full-page-scroll";
 @import "./pages/LP/last-year-images";
-@import "./pages/LP/share"
+@import "./pages/LP/share";
+
+/* utils */
+@import "./utils/line--LP"

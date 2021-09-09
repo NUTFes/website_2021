@@ -1,0 +1,28 @@
+.location {
+  @include Block;
+  &__body {
+    &__copy {
+      font-size: 1.5rem;
+    }
+    &__map {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      iframe {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        height: 90%;
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .location__body {
+    &__map {
+      padding-bottom: 178%;
+    }
+  }
+}

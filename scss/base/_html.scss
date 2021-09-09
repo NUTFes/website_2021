@@ -1,4 +1,53 @@
-html {
-  font-size: 62.5%;
-  background-color: #E0E5EC;
+/* 画面幅が0-768pxの場合　*/
+@media screen and (max-width:768px) {
+  @function get_vw($size, $viewport: 768)/* ←の'$viewport'の値が基準となる画面幅 */{
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+  }
+  
+  @mixin fz_vw($font_size: 10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+  }
+
+  html {
+    @include fz_vw(20);/* ←の'fz_vw()'の値が，基準となる画面幅↑の時に，htmlタグのfont-sizeになる．以下同様*/
+    background-color: #E0E5EC;
+  }
+}
+
+/* 画面幅が768ｐｘ-1024pxの場合　*/
+@media screen and (min-width:768px) and (max-width:1024px){
+  @function get_vw($size, $viewport: 765) {
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+  }
+  
+  @mixin fz_vw($font_size: 10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+  }
+
+  html {
+    @include fz_vw(10);
+    background-color: #E0E5EC;
+  }
+}
+
+/* 画面幅が1024px以上の場合 */
+@media screen and (min-width:1024px) {
+  @function get_vw($size, $viewport: 1024) {
+    $rate: 100 / $viewport;
+    @return $rate * $size * 1vw;
+  }
+  
+  @mixin fz_vw($font_size: 10) {
+    font-size: $font_size * 1px;
+    font-size: get_vw($font_size);
+  }
+
+  html {
+    @include fz_vw(10);
+    background-color: #E0E5EC;
+  }
 }

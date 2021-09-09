@@ -26,7 +26,7 @@
 
   <body>
     <!-- 臨時 -->
-    <div class="full-page-scroll">
+    <div class="full-page-scroll none">
       <div class="intro-card hero">
         <div id="border"></div><!-- 白枠線 -->
         <div class="intro-card__txt">
@@ -61,62 +61,108 @@
         </div>
       </div>
     </div>
-
     <!-- 臨時 -->
 
-    <div class="hero none">
+    <header>
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+          <ul>
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#">会場マップ</a></li>
+            <li><a href="#">当日スケジュール</a></li>
+            <li><a href="#">代表挨拶</a></li>
+            <li><a href="#">協賛企業紹介</a></li>
+            <li><a href="#">アクセス</a></li>
+          </ul>
+        </div>
+        <!--ここまでメニュー-->
+      </div>
+    </header>
+
+    <div class="hero">
       <!-- none -->
       <div class="hero__txt">
+        <h2 class="hero__txt__title__en">NUT FES</h2>
         <p class="hero__txt__date">9.11[SAT]-9.12[SUN]</p>
       </div>
     </div>
 
-    <div class="wrapper none">
+    <div class="wrapper">
       <!-- none -->
       <div class="news">
-        <h3 class="line">お知らせ</h3>
-        <ul>
-          <li>1つ目のニュース記事です</li>
-          <li>2つ目のニュース記事です</li>
-          <li>3つ目のニュース記事です</li>
-        </ul>
-        <a href=""><p>全てのお知らせを見る></p></a>
+        <h3 class="news__header line">お知らせ</h3>
+        <div class="news__body">
+          <ul class="news__body__list">
+            <li class="news__body__list__item">1つ目のニュース記事です</li>
+            <li class="news__body__list__item">2つ目のニュース記事です</li>
+            <li class="news__body__list__item">3つ目のニュース記事です</li>
+          </ul>
+          <a href=""><p class="news__body__link">全てのお知らせを見る></p></a>
+        </div>
+        
       </div>
       <!-- newsの終わり -->
 
       <div class="event-catalog">
-        <h3 class="line">イベント一覧</h3>
-        <div class="event-catalog__card">
-          <p class="event-catalog__card__title">模擬店/展示</p>
+        <h3 class="event-catalog__header line">イベント一覧</h3>
+        <div class="event-catalog__body">
+          <div class="event-catalog__body__card event">
+            <p class="event-catalog__body__card__title">イベント ></p>
+          </div>
+          <div class="event-catalog__body__card stage">
+            <p class="event-catalog__body__card__title">ステージ企画 ></p>
+          </div>
+          <div class="event-catalog__body__card exhibition">
+            <p class="event-catalog__body__card__title">展示 ></p>
+          </div>
         </div>
-        <div class="event-catalog__card">
-          <p class="event-catalog__card__title">国際祭り</p>
-        </div>
-        <div class="event-catalog__card">
-          <p class="event-catalog__card__title">ゲスト企画</p>
-        </div>
-        <div class="event-catalog__card">
-          <p class="event-catalog__card__title">時間限定企画(仮)</p>
-        </div>
-        <div class="event-catalog__card">
-          <p class="event-catalog__card__title">研究フォーラム</p>
-        </div>
-        <div class="event-catalog__card">
-          <p class="event-catalog__card__title">研究室公開</p>
-        </div>
-      </div>
-      <!-- イベント一覧の終わり -->
 
-      <div class="ad">
-        <img src="" alt="" />
+      </div><!-- イベント一覧の終わり -->
+
+      <div>
+
+        <!-- 広告画像のランダム表示 -->
+        <script>
+          imgList = new Array();
+
+          imgList = ["test1.jpeg", "test2.jpeg", "test3.jpeg"]
+
+          const imgChange = () => {
+            r = Math.floor(Math.random() * imgList.length);
+
+            pic.src = "./images/company-images/" + imgList[r]
+            //document.write('<img src="./images/company-images/' + imgList[r] + '" />');
+            setTimeout("imgChange()", 3500)
+          }
+
+          window.onload = () => {
+            imgChange()
+          }
+
+        </script>
+
+        <img id=pic src="./images/company-images/test1.jpeg" />
+
       </div>
-    </div>
+
+    </div><!-- wrapperの終わり -->
 
     <footer>
-      <div class="Footer none">
-        <!-- none -->
-        <p class="Footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
+      <div class="footer"><!-- none -->
+        <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
+        <ul class="footer__list">
+          <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
+          <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
+          <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
+          <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
+          <li class="footer__list__item"><a href=""><p>アクセス</p></a></li>
+        </ul>
+        <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
       </div>
     </footer>
+
   </body>
 </html>

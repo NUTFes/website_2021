@@ -1,24 +1,40 @@
 .event-catalog {
+  @include Block;
+  &__body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     &__card {
-        position: relative;
-        display: block;
-        width: 260px;
-        height: 153px;
-        border-radius: 15px;
-        margin: 7px;
-        background-image: linear-gradient(0deg, rgba(244,255,74,0.7) 10%, rgba(55,248,119,0.7) 40%, rgba(41,205,248,0.7) 90%),
- url(../images/shop.JPG);
-        &__title {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            padding: 10px;
-            font-size: 15px;
-            background-color: rgba(51, 51, 51, 0.3);
-            color: white;
-        }
-    }
+      position: relative;
+      display: block;
+      width: 260px;
+      height: 153px;
+      border-radius: 15px;
+      margin: 7px;
+      background-size: cover;
+      &.event {
+        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
+    url(../images/bingo.JPG);
+        
+      }
+      &.stage {
+        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
+    url(../images/street-style.JPG);
+      }
+      &.exhibition {
+        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
+    url(../images/grobal.JPG);
+      }
+      &__title {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0 0 15px 0;
+        padding: 10px;
+        font-size: 15px;
+        background-color: rgba(51, 51, 51, 0.3);
+        color: white;
+      }
+    }  
+  }
 }
