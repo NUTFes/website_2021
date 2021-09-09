@@ -1,0 +1,6 @@
+.line--LP {
+  text-wrap: nowrap;
+  &::before, &::after {
+    background-color: white;
+  }
+}
