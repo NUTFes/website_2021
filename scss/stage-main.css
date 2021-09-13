@@ -386,6 +386,10 @@ body {
   background-size: cover;
 }
 
+.map-size-img {
+  margin: 0 1rem 5rem;
+}
+
 .event-card-container {
   margin: 0 auto 6rem;
   display: -webkit-box;
@@ -469,6 +473,7 @@ body {
 }
 
 /* pages */
+/* @import "./pages/eventIntroduction"; */
 /* parts */
 /* utils */
-/*# sourceMappingURL=exhibition-main.css.map */
+/*# sourceMappingURL=stage-main.css.map */

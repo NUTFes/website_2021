@@ -356,7 +356,7 @@ body {
   padding: 0 55px;
   margin-bottom: 1.5rem;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 .line::before, .line::after {
@@ -396,6 +396,7 @@ body {
   width: 80%;
   max-width: 500px;
   margin-bottom: 1rem;
+  border-radius: 50%;
 }
 
 .greeting__header__position {
@@ -407,9 +408,17 @@ body {
   font-size: 2rem;
 }
 
+.greeting__subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+}
+
 .greeting__copy {
   font-size: 1.5rem;
-  line-height: 2.2rem;
+  line-height: 3rem;
   text-align: left;
 }
 
