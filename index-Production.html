@@ -14,7 +14,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
-    />
+      />
 
     <!-- css -->
     <link rel="stylesheet" href="scss/index-main.css" />
@@ -47,17 +47,17 @@
         </div>
         <div class="share-icons">
           <a href="https://twitter.com/nut_fes"
-            ><img
-              class="share-icons__item"
-              src="images/icon/twitter.svg"
-              alt="Twitter"
-          /></a>
+             ><img
+                class="share-icons__item"
+                src="images/icon/twitter.svg"
+                alt="Twitter"
+                /></a>
           <a href="https://www.instagram.com/nutfes/"
-            ><img
-              class="share-icons__item"
-              src="images/icon/instagram.svg"
-              alt="Instagram"
-          /></a>
+             ><img
+                class="share-icons__item"
+                src="images/icon/instagram.svg"
+                alt="Instagram"
+                /></a>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
             <li><a href="#">当日スケジュール</a></li>
             <li><a href="#">代表挨拶</a></li>
             <li><a href="#">協賛企業紹介</a></li>
-            <li><a href="#">アクセス</a></li>
+            <!-- <li><a href="#">アクセス</a></li> -->
           </ul>
         </div>
         <!--ここまでメニュー-->
@@ -102,7 +102,7 @@
           </ul>
           <a href=""><p class="news__body__link">全てのお知らせを見る></p></a>
         </div>
-        
+
       </div>
       <!-- newsの終わり -->
 
@@ -122,30 +122,30 @@
 
       </div><!-- イベント一覧の終わり -->
 
-      <div>
+      <!-- バナー広告 -->
+      <div id="bannerImg"></div><!-- バナー広告を表示するためのコンテナ -->
 
-        <!-- 広告画像のランダム表示 -->
-        <script>
-          imgList = new Array();
-          imgList = ["banner1.png"]
-
-          const imgChange = () => {
-            r = Math.floor(Math.random() * imgList.length);
-
-            pic.src = "./images/company-images/" + imgList[r]
-            //document.write('<img src="./images/company-images/' + imgList[r] + '" />');
-            setTimeout("imgChange()", 3500)
-          }
-
-          window.onload = () => {
-            imgChange()
-          }
-
-        </script>
-
-        <img id=pic src="./images/company-images/test1.jpeg" />
-
-      </div>
+      <script> // バナー広告をランダムに表示するスクリプト
+        imgList = new Array();
+        // バナー画像と画像に埋め込むリンクの一覧
+        imgList = [
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/banner1.png"></a>',
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/test1.jpeg"></a>',
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/test2.jpeg"></a>',
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/test3.jpeg"></a>',
+        ]
+        // バナー画像をランダムに選出し，idで紐づいたdiv内にHTMLを書き出す関数
+        const imgChange = () => {
+          r = Math.floor(Math.random() * imgList.length); // 1から画像の総数の幅で乱数生成
+          document.getElementById('bannerImg').innerHTML = imgList[r] // 生成した乱数を配列のインデックスとし，配列内のHTMLを出力する
+          setTimeout("imgChange()", 3500) // 設定時間後にこの関数を再実行する．例：3500→3.5秒後に再実行
+        }
+        // 上記の関数を最初に（画面読み込み時）実行する
+        window.onload = () => { 
+          imgChange()
+        }
+      </script>
+      <!-- バナー広告の終わり -->
 
     </div><!-- wrapperの終わり -->
 
@@ -157,7 +157,7 @@
           <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
           <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
           <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
-          <li class="footer__list__item"><a href=""><p>アクセス</p></a></li>
+          <!-- <li class="footer__list__item"><a href=""><p>アクセス</p></a></li> -->
         </ul>
         <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
       </div>
