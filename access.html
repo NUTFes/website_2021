@@ -88,8 +88,26 @@
         </div>
       </div>
     </div><!-- locationの終わり -->
-    <!-- 協賛広告 -->
-    <div id="randomImg"></div>
+    <!-- バナー広告 -->
+    <div>
+      <!-- 広告画像のランダム表示 -->
+      <script>
+        imgList = new Array();
+        imgList = ["banner1.png"]
+        const imgChange = () => {
+          r = Math.floor(Math.random() * imgList.length);
+          pic.src = "./images/company-images/" + imgList[r]
+          //document.write('<img src="./images/company-images/' + imgList[r] + '" />');
+          setTimeout("imgChange()", 3500)
+        }
+        window.onload = () => {
+          imgChange()
+        }
+      </script>
+      <!-- 最初に表示される画像 -->
+      <img id=pic src="./images/company-images/test1.jpeg" />
+    </div>
+
   </div><!-- wrapperの終わり -->
   
   <footer>
