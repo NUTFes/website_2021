@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <title>nutfeswebsite</title>
-  <meta name="description" content="長岡技術科学大学で行われる学園祭" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- デバイスの横幅に合わせる -->
-  <title>紹介ページ</title>
-  
-  <!-- link -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
-  rel="stylesheet"
-  />
-  
-  <!-- css -->
-  <link rel="stylesheet" href="scss/map-main.css" />
-  
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="images//////////" />
-  <!-- 後で画像入れといて -->
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>nutfeswebsite</title>
+    <meta name="description" content="長岡技術科学大学で行われる学園祭" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- デバイスの横幅に合わせる -->
+    <title>紹介ページ</title>
 
-<body>
-  <header>
-    <div class="hamburger-menu">
-      <input type="checkbox" id="menu-btn-check">
-      <label for="menu-btn-check" class="menu-btn"><span></span></label>
-      <!--ここからメニュー-->
-      <div class="menu-content">
-        <ul>
-          <li><a href="#">トップページ</a></li>
-          <li><a href="#">会場マップ</a></li>
-          <li><a href="#">当日スケジュール</a></li>
-          <li><a href="#">代表挨拶</a></li>
-          <li><a href="#">協賛企業紹介</a></li>
-          <li><a href="#">アクセス</a></li>
-        </ul>
+    <!-- link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="scss/map-main.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images//////////" />
+    <!-- 後で画像入れといて -->
+  </head>
+
+  <body>
+    <header>
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+          <ul>
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#">会場マップ</a></li>
+            <li><a href="#">当日スケジュール</a></li>
+            <li><a href="#">代表挨拶</a></li>
+            <li><a href="#">協賛企業紹介</a></li>
+            <!-- <li><a href="#">アクセス</a></li> -->
+          </ul>
+        </div>
+        <!--ここまでメニュー-->
       </div>
-      <!--ここまでメニュー-->
-    </div>
-  </header>
-  
-  <div class="hero">
-    <div class="hero__txt">
-      <h2 class="hero__txt__title">会場マップ</h2>
-    </div>
-  </div>
-  
-  <div class="wrapper">
-    <div class="map">
-      <h3 class="map__header line">会場マップ</h3>
-      <img class="map-size-img" src="./images/map/map-demo.svg" alt="">
-      
-      <h3 class="map__header line">構内マップ</h3>
-      <img class="map-size-img" src="./images/map/map-demo.svg" alt="">
+    </header>
+
+    <div class="hero">
+      <div class="hero__txt">
+        <h2 class="hero__txt__title">会場マップ</h2>
+      </div>
     </div>
 
-    <!-- バナー広告 -->
-    <div>
-      <!-- 広告画像のランダム表示 -->
-      <script>
+    <div class="wrapper">
+      <div class="map">
+        <h3 class="map__header line">会場マップ</h3>
+        <img class="map-size-img" src="./images/map/map-demo.svg" alt="">
+
+        <h3 class="map__header line">構内マップ</h3>
+        <img class="map-size-img" src="./images/map/map-demo.svg" alt="">
+      </div>
+
+      <!-- バナー広告 -->
+      <div id="bannerImg"></div><!-- バナー広告を表示するためのコンテナ -->
+
+      <script> // バナー広告をランダムに表示するスクリプト
         imgList = new Array();
-        imgList = ["test1.jpeg", "test2.jpeg", "test3.jpeg"]
+        // バナー画像と画像に埋め込むリンクの一覧
+        imgList = [
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/banner1.png"></a>',
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/test1.jpeg"></a>',
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/test2.jpeg"></a>',
+          '<a href="https://oba18.github.io/"><img src="./images/company-images/test3.jpeg"></a>',
+        ]
+        // バナー画像をランダムに選出し，idで紐づいたdiv内にHTMLを書き出す関数
         const imgChange = () => {
-          r = Math.floor(Math.random() * imgList.length);
-          pic.src = "./images/company-images/" + imgList[r]
-          //document.write('<img src="./images/company-images/' + imgList[r] + '" />');
-          setTimeout("imgChange()", 3500)
+          r = Math.floor(Math.random() * imgList.length); // 1から画像の総数の幅で乱数生成
+          document.getElementById('bannerImg').innerHTML = imgList[r] // 生成した乱数を配列のインデックスとし，配列内のHTMLを出力する
+          setTimeout("imgChange()", 3500) // 設定時間後にこの関数を再実行する．例：3500→3.5秒後に再実行
         }
-        window.onload = () => {
+        // 上記の関数を最初に（画面読み込み時）実行する
+        window.onload = () => { 
           imgChange()
         }
       </script>
-      <!-- 最初に表示される画像 -->
-      <img id=pic src="./images/company-images/test1.jpeg" />
+      <!-- バナー広告の終わり -->
+
     </div>
-  </div>
-  
-</div><!-- wrapperの終わり -->
 
-<footer>
-  <div class="footer"><!-- none -->
-    <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
-    <ul class="footer__list">
-      <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
-      <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
-      <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
-      <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
-      <li class="footer__list__item"><a href=""><p>アクセス</p></a></li>
-    </ul>
-    <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
-  </div>
-</footer>
+    </div><!-- wrapperの終わり -->
 
-</body>
+    <footer>
+      <div class="footer"><!-- none -->
+        <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
+        <ul class="footer__list">
+          <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
+          <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
+          <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
+          <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
+          <!-- <li class="footer__list__item"><a href=""><p>アクセス</p></a></li> -->
+        </ul>
+        <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
+      </div>
+    </footer>
+
+  </body>
 </html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>nutfeswebsite</title>
+    <meta name="description" content="長岡技術科学大学で行われる学園祭" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- デバイスの横幅に合わせる -->
+    <title>ステージ企画紹介</title>
+
+    <!-- link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="scss/stage-main.css" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images//////////" />
+    <!-- 後で画像入れといて -->
+  </head>
+
+  <body>
+    <header>
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!-- ここからメニュー -->
+        <div class="menu-content">
+          <ul>
+            <li><a href="#">トップページ</a></li>
+            <li><a href="#">会場マップ</a></li>
+            <li><a href="#">当日スケジュール</a></li>
+            <li><a href="#">代表挨拶</a></li>
+            <li><a href="#">協賛企業紹介</a></li>
+            <!-- <li><a href="#">アクセス</a></li> -->
+          </ul>
+        </div>
+        <!-- ここまでメニュー -->
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero__txt">
+        <h2 class="hero__txt__title">ステージ企画</h2>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <!-- ヘッダー -->
+      <!-- 企画紹介のカード -->
+      <div class="event-card-container">
+        <div class="event-card-container__content">
+          <h2 class="event-card-container__content__title">
+            Nagaoka<br>
+            Mikunological Live
+          </h2>
+          <h4 class="event-card-container__content__group">
+            PMC
+          </h4>
+          <img class="event-card-container__content__image" src="./images/bingo.JPG" />
+          <p class="event-card-container__content__text">
+            ボーカロイドたちによる<br>
+            バーチャルライブ開催!!!<br>
+            集まれボカロ好き!!!
+          </p>
+          <div class="event-card-container__content__detail">
+            <span class="event-card-container__content__detail-title">Detail</span>
+            <p>
+              晴天・雨天<br>
+              マルチメディアシステムセンター<br>
+              11:00 - 12:00
+            </p>
+          </div>
+        </div>
+        <div class="event-card-container__content">
+          <h2 class="event-card-container__content__title">
+            Nagaoka<br>
+            Mikunological Live
+          </h2>
+          <h4 class="event-card-container__content__group">
+            PMC
+          </h4>
+          <img class="event-card-container__content__image" src="./images/bingo.JPG" />
+          <p class="event-card-container__content__text">
+            ボーカロイドたちによる<br>
+            バーチャルライブ開催!!!<br>
+            集まれボカロ好き!!!
+          </p>
+          <div class="event-card-container__content__detail">
+            <span class="event-card-container__content__detail-title">Detail</span>
+            <p>
+              晴天・雨天<br>
+              マルチメディアシステムセンター<br>
+              11:00 - 12:00
+            </p>
+          </div>
+        </div>
+        <div class="event-card-container__content">
+          <h2 class="event-card-container__content__title">
+            Nagaoka<br>
+            Mikunological Live
+          </h2>
+          <h4 class="event-card-container__content__group">
+            PMC
+          </h4>
+          <img class="event-card-container__content__image" src="./images/bingo.JPG" />
+          <p class="event-card-container__content__text">
+            ボーカロイドたちによる<br>
+            バーチャルライブ開催!!!<br>
+            集まれボカロ好き!!!
+          </p>
+          <div class="event-card-container__content__detail">
+            <span class="event-card-container__content__detail-title">Detail</span>
+            <p>
+              晴天・雨天<br>
+              マルチメディアシステムセンター<br>
+              11:00 - 12:00
+            </p>
+          </div>
+        </div>
+        <div class="event-card-container__content">
+          <h2 class="event-card-container__content__title">
+            Nagaoka<br>
+            Mikunological Live
+          </h2>
+          <h4 class="event-card-container__content__group">
+            PMC
+          </h4>
+          <img class="event-card-container__content__image" src="./images/bingo.JPG" />
+          <p class="event-card-container__content__text">
+            ボーカロイドたちによる<br>
+            バーチャルライブ開催!!!<br>
+            集まれボカロ好き!!!
+          </p>
+          <div class="event-card-container__content__detail">
+            <span class="event-card-container__content__detail-title">Detail</span>
+            <p>
+              晴天・雨天<br>
+              マルチメディアシステムセンター<br>
+              11:00 - 12:00
+            </p>
+          </div>
+        </div>
+
+        <!-- バナー広告 -->
+        <div id="bannerImg"></div><!-- バナー広告を表示するためのコンテナ -->
+
+        <script> // バナー広告をランダムに表示するスクリプト
+          imgList = new Array();
+          // バナー画像と画像に埋め込むリンクの一覧
+          imgList = [
+            '<a href="https://oba18.github.io/"><img src="./images/company-images/banner1.png"></a>',
+            '<a href="https://oba18.github.io/"><img src="./images/company-images/test1.jpeg"></a>',
+            '<a href="https://oba18.github.io/"><img src="./images/company-images/test2.jpeg"></a>',
+            '<a href="https://oba18.github.io/"><img src="./images/company-images/test3.jpeg"></a>',
+          ]
+          // バナー画像をランダムに選出し，idで紐づいたdiv内にHTMLを書き出す関数
+          const imgChange = () => {
+            r = Math.floor(Math.random() * imgList.length); // 1から画像の総数の幅で乱数生成
+            document.getElementById('bannerImg').innerHTML = imgList[r] // 生成した乱数を配列のインデックスとし，配列内のHTMLを出力する
+            setTimeout("imgChange()", 3500) // 設定時間後にこの関数を再実行する．例：3500→3.5秒後に再実行
+          }
+          // 上記の関数を最初に（画面読み込み時）実行する
+          window.onload = () => { 
+            imgChange()
+          }
+        </script>
+        <!-- バナー広告の終わり -->
+
+      </div><!-- wrapperの終わり -->
+
+      <footer>
+        <div class="footer"><!-- none -->
+          <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
+          <ul class="footer__list">
+            <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
+            <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
+            <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
+            <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
+            <li class="footer__list__item"><a href=""><p>アクセス</p></a></li>
+            <!-- <li class="footer__list__item"><a href=""><p>アクセス</p></a></li> -->
+          </ul>
+          <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
+        </div>
+      </footer>
+
+  </body>
+</html>
