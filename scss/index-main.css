@@ -335,7 +335,7 @@ body {
 }
 
 .hero__txt__title {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -411,7 +411,7 @@ body {
 }
 
 .event-catalog__body__card.stage {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/street-style.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/street-style.jpeg);
 }
 
 .event-catalog__body__card.exhibition {
@@ -515,15 +515,15 @@ body {
 }
 
 .intro-card.event {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.jpg);
 }
 
 .intro-card.stage {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.jpg);
 }
 
 .intro-card.exhibition {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.jpg);
 }
 
 .intro-card.futter {
