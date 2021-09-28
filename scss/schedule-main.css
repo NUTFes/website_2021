@@ -131,9 +131,9 @@ html {
 .wrapper {
   width: 97vw;
   min-width: 320px;
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 95vh auto 3rem;
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   background-color: #fff;
   border-radius: 1.5rem;
   text-align: center;
@@ -338,6 +338,34 @@ body {
   background-image: url(../images/hero/top.png);
 }
 
+.hero.event {
+  background-image: url(../images/hero/event.png);
+}
+
+.hero.stage {
+  background-image: url(../images/hero/stage.png);
+}
+
+.hero.exhibition {
+  background-image: url(../images/hero/exhibition.png);
+}
+
+.hero.map {
+  background-image: url(../images/hero/map.png);
+}
+
+.hero.schedule {
+  background-image: url(../images/hero/schedule.png);
+}
+
+.hero.president {
+  background-image: url(../images/hero/president.png);
+}
+
+.hero.company {
+  background-image: url(../images/hero/top.png);
+}
+
 .hero__txt {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 2rem 1.5rem;
@@ -361,6 +389,13 @@ body {
   padding: 0.5rem 2.4rem;
   /* border: solid 1px white; */
   background-color: red;
+}
+
+.shadow-card {
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
 }
 
 /* common */
