@@ -1,3 +1,9 @@
+.map {
+  width: 100%;
+}
 .map-size-img {
-  margin: 0 1rem 5rem;
+  display: block;
+  margin: 1rem auto 5rem;
+  width: 90%;
+  max-width: 600px;
 }
