@@ -25,7 +25,7 @@
       padding: 15px;
     }
     &__group {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       text-align: right;
       padding: 0px 2.2rem;
     }
@@ -41,8 +41,8 @@
     }
 		&__detail {
 			position: relative;
-			margin: 2em 2em;
-			padding: 0.5em 1em;
+			margin: 2em 1em 1em 1em;
+			padding: 1em 1em 0.5em;
 			border: solid 1px #333;
 			border-radius: 8px;
 		}
@@ -56,14 +56,103 @@
 			font-size: 1.7rem;
 			color: #333;
 			font-weight: bold;
-      background-color: #DFE0E0;
+      background-color: white;
 		}
 		&__detail p {
       margin: 0; 
-      line-height: 2.3rem;
-      padding: 10px;
-      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0 0 0.5rem;
+      font-size: 1.8rem;
       text-align: left;
 		}
+  }
+}
+.detail-list {
+  font-size: 1.8rem;
+  list-style: none;
+  padding: 0.5rem;
+  text-align: left;
+  &__item {
+    padding: 0.1rem;
+    /* 場所(place) */
+    &.place {
+      position: relative;
+      padding-left: 2em;
+    }
+    &.place::before {
+      position:absolute;
+      left:0;
+      top: 0;
+      content:"";
+      display:inline-block;
+      width:1.3em;
+      height:1.3em;
+      background:url(../images/icon/place.svg) no-repeat;
+      background-size:contain;
+    }
+    /* 受付時間:(reception) */
+    &.reception {
+      position: relative;
+      padding-left: 2em;
+    }
+    &.reception:before {
+      position:absolute;
+      left:0;
+      top: 0;
+      content:"";
+      display:inline-block;
+      width:1.3em;
+      height:1.3em;
+      background:url(../images/icon/reception.svg) no-repeat;
+      background-size:contain;
+    }
+    /* 時間:(time) */
+    &.time {
+      position: relative;
+      padding-left: 2em;
+    }
+    &.time:before {
+      position:absolute;
+      left:0;
+      top: 0;
+      content:"";
+      display:inline-block;
+      width:1.3em;
+      height:1.3em;
+      background:url(../images/icon/time.svg) no-repeat;
+      background-size:contain;
+    }
+    /* 一言コメント:(comment) */
+    &.comment {
+      position: relative;
+      padding-left: 2em;
+    }
+    &.comment:before {
+      position:absolute;
+      left:0;
+      top: 0;
+      content:"";
+      display:inline-block;
+      width:1.3em;
+      height:1.3em;
+      background:url(../images/icon/comment.svg) no-repeat;
+      background-size:contain;
+    }
+    /* 注意点:(caution) */
+    &.caution {
+      position: relative;
+      padding-left: 2em;
+    }
+    &.caution:before {
+      position:absolute;
+      left:0;
+      top: 0;
+      content:"";
+      display:inline-block;
+      width:1.3em;
+      height:1.3em;
+      background:url(../images/icon/caution.svg) no-repeat;
+      background-size:contain;
+    }
   }
 }
