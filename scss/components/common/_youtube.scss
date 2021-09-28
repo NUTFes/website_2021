@@ -1,0 +1,26 @@
+.ch-link {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.youtube-container {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  &__item {
+    margin: 0.5rem;
+    &__title {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+    &__movie {
+      min-width: 250px;
+      width: 100%;
+      height: calc(100% * 0.75);
+      max-width: 425px;
+      max-width: calc(425px * 0.75);
+      /* margin: 1.5rem; */
+    }
+  }
+}

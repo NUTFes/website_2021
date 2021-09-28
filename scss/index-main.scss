@@ -6,10 +6,12 @@
 @import "./base/wrapper";
 @import "./base/none";
 @import "./base/footer";
+@import "./base/icon";
 
 /* components */
 @import "./components/common/hamburger-menu";
 @import "./components/common/hero";
+@import "./components/common/shadow-card";
 
 /* common */
 @import "./components/common/line-title";

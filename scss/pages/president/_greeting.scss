@@ -1,11 +1,15 @@
 .greeting {
     @include Block;
     width: 90%;
+    margin: 6rem auto;
+    padding: 4rem 2rem;
     &__image {
         width: 80%;
         max-width: 500px;
         margin-bottom: 1rem;
         border-radius: 50%;
+        border: solid 1px red;
+        padding: 0.5rem 1rem 0.5rem 0rem;
     }
     &__header {
         &__position {
@@ -27,5 +31,6 @@
         font-size: 1.5rem;
         line-height: 3rem;
         text-align: left;
+        margin-top: 3rem;
     }
 }
