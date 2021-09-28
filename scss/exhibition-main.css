@@ -480,14 +480,14 @@ body {
 
 .event-card-container__content__image {
   width: 250px;
-  height: 230px;
+  height: 250px;
   margin: 1.5rem auto;
 }
 
 .event-card-container__content__text {
   line-height: 2rem;
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .event-card-container__content__detail {
