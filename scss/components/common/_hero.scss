@@ -13,6 +13,27 @@
 	&.index {
 		background-image: url(../images/hero/top.png);
 	}
+	&.event {
+		background-image: url(../images/hero/event.png);
+	}
+	&.stage {
+		background-image: url(../images/hero/stage.png);
+	}
+	&.exhibition {
+		background-image: url(../images/hero/exhibition.png);
+	}
+	&.map {
+		background-image: url(../images/hero/map.png);
+	}
+	&.schedule {
+		background-image: url(../images/hero/schedule.png);
+	}
+	&.president {
+		background-image: url(../images/hero/president.png);
+	}
+	&.company {
+		background-image: url(../images/hero/top.png);
+	}
 	&__txt {
 		background-color: rgba($color: #000000, $alpha: 0.50);
 		padding: 0 2rem 1.5rem;
