@@ -405,6 +405,11 @@ body {
 .company-list {
   margin: 7rem 0;
   list-style: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 6rem auto;
+  padding: 3rem;
 }
 
 .company-list__item {

@@ -1,6 +1,9 @@
 .company-list {
   margin: 7rem 0;
   list-style: none;
+  width: max-content;
+  margin: 6rem auto ;
+  padding: 3rem;
   &__item {
     font-size: 2rem;
     font-weight: 200;
