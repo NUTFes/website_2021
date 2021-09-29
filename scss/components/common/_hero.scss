@@ -34,13 +34,18 @@
 	&.company {
 		background-image: url(../images/hero/top.png);
 	}
-	&__txt {
+	&__txt--index {
 		background-color: rgba($color: #000000, $alpha: 0.50);
 		padding: 0 2rem 1.5rem;
+	}
+	&__txt {
+		background-color: rgba($color: #000000, $alpha: 0.50);
+		padding: 2rem 2rem 2.5rem;
 		&__title {
 			font-size: 4.5rem;
 			font-weight: 400;
 			white-space: nowrap;
+			text-decoration: underline red 5px;
 			&__en {
 				margin: 0.5rem;
 				font-size: 7rem;
