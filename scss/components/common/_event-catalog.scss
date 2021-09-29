@@ -4,37 +4,76 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    a {
+      text-decoration: none;
+      &:visited {
+        color: #333;
+        text-decoration: underline;
+      }
+    }
     &__card {
       position: relative;
       display: block;
-      width: 260px;
-      height: 153px;
+      height: max-content;
+      width: 300px;
       border-radius: 15px;
       margin: 7px;
       background-size: cover;
-      &.event {
-        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
-    url(../images/bingo.JPG);
-        
-      }
-      &.stage {
-        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
-    url(../images/street-style.JPG);
-      }
-      &.exhibition {
-        background-image: linear-gradient(-45deg, rgba(35,0,0,0.7) 10%, rgba(230,35,20,0.7) 40%, rgba(245,230,105,0.7) 90%),
-    url(../images/grobal.JPG);
-      }
       &__title {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        border-radius: 0 0 15px 0;
-        padding: 10px;
-        font-size: 15px;
-        background-color: rgba(51, 51, 51, 0.3);
-        color: white;
+        font-size: 2rem;
       }
     }  
+  }
+}
+.event-card {
+  display: block;
+  height: max-content;
+  width: 290px;
+  border-radius: 15px;
+  margin: 7px;
+  padding: 1rem;
+  background-size: cover;
+  text-align: left;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  &__copy {
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 0.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+  }
+  &__image {
+    width: 290px;
+    height: 290px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    &.event {
+      background-image: url(../images/index/event.png);
+    }
+    &.stage {
+      background-image: url(../images/index/stage.png);
+    }
+    &.exhibition {
+      background-image: url(../images/index/exhibition.png);
+    }
+  }
+  .event-card__title::before {
+    content: attr(data-en);
+    display: block;
+    color: red;
+    font-size: 1rem;
+  } 
+  .event-card__title::after {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 1px;
+    background-color: red;
   }
 }

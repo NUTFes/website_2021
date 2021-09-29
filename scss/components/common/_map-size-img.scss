@@ -1,3 +1,29 @@
+.map {
+  width: 100%;
+}
 .map-size-img {
-  margin: 0 1rem 5rem;
+  display: block;
+  margin: 1rem auto 5rem;
+  width: 90%;
+  max-width: 600px;
+  &.event {
+    max-width: 400px;
+  }
+  &.pamphlet {
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+}
+.map-size-flex {
+  width: 100%;
+  margin: 0 0 3rem;
+  display: flex;  
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  &__item {
+    width: 95%;
+    max-width: 400px;
+    margin: 1rem;
+  }
 }

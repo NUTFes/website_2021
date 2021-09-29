@@ -6,25 +6,25 @@
 @import "./base/wrapper";
 @import "./base/none";
 @import "./base/footer";
+@import "./base/icon";
 
 /* components */
 @import "./components/common/hamburger-menu";
 @import "./components/common/hero";
+@import "./components/common/shadow-card";
 
 /* common */
 @import "./components/common/line-title";
 @import "./components/common/event-catalog";
 @import "./components/common/company-img";
+@import "./components/common/map-size-img";
 
 /* pages */
 @import "./pages/index/news";
-
-
 /* parts */
 
 /* utils */
 @import "./utils/coming-soon";
-
 
 // 臨時追加scss
 // 公開できる記事ができたら消すこと:小林

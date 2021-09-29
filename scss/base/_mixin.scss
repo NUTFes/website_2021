@@ -8,3 +8,8 @@
 @mixin Block {
   margin: 0 auto 6rem;
 }
+@mixin flexCentering($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

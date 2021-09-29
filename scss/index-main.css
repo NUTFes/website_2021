@@ -131,8 +131,8 @@ html {
 .wrapper {
   width: 97vw;
   min-width: 320px;
-  max-width: 1000px;
-  margin: -15px auto 3rem;
+  max-width: 1050px;
+  margin: 95vh auto 3rem;
   padding: 4rem 0;
   background-color: #fff;
   border-radius: 1.5rem;
@@ -165,6 +165,35 @@ html {
 
 .footer__list__item a {
   text-decoration: none;
+}
+
+/* 場所 */
+.gg-pin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: block;
+  -webkit-transform: rotate(45deg) scale(var(--ggs, 1));
+          transform: rotate(45deg) scale(var(--ggs, 1));
+  width: 18px;
+  height: 18px;
+  border-radius: 100% 100% 0 100%;
+  border: 2px solid;
+  margin-top: -4px;
+}
+
+.gg-pin::before {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid;
+  top: 3px;
+  left: 3px;
+  border-radius: 40px;
 }
 
 /* components */
@@ -313,29 +342,66 @@ body {
 
 .hero {
   width: 100%;
-  height: 30vh;
+  height: 100vh;
   background-image: none;
-  position: relative;
   color: white;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#14366f), to(#63e5c5));
   background-image: linear-gradient(0deg, #14366f 0%, #63e5c5 100%);
   z-index: -99;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  margin-top: -95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero.index {
+  background-image: url(../images/hero/top.png);
+}
+
+.hero.event {
+  background-image: url(../images/hero/event.png);
+}
+
+.hero.stage {
+  background-image: url(../images/hero/stage.png);
+}
+
+.hero.exhibition {
+  background-image: url(../images/hero/exhibition.png);
+}
+
+.hero.map {
+  background-image: url(../images/hero/map.png);
+}
+
+.hero.schedule {
+  background-image: url(../images/hero/schedule.png);
+}
+
+.hero.president {
+  background-image: url(../images/hero/president.png);
+}
+
+.hero.company {
+  background-image: url(../images/hero/top.png);
 }
 
 .hero__txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  margin: 0 auto 1.5rem;
-  vertical-align: center;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 2rem 1.5rem;
 }
 
 .hero__txt__title {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -350,7 +416,25 @@ body {
 .hero__txt__date {
   font-size: 2rem;
   padding: 0.5rem 2.4rem;
-  border: solid 1px white;
+  /* border: solid 1px white; */
+  background-color: red;
+}
+
+.shadow-card {
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+
+.shadow-card--pamphlet {
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto 6rem;
 }
 
 /* common */
@@ -396,37 +480,92 @@ body {
           justify-content: center;
 }
 
+.event-catalog__body a {
+  text-decoration: none;
+}
+
+.event-catalog__body a:visited {
+  color: #333;
+  text-decoration: underline;
+}
+
 .event-catalog__body__card {
   position: relative;
   display: block;
-  width: 260px;
-  height: 153px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 300px;
   border-radius: 15px;
   margin: 7px;
   background-size: cover;
 }
 
-.event-catalog__body__card.event {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.JPG);
-}
-
-.event-catalog__body__card.stage {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/street-style.JPG);
-}
-
-.event-catalog__body__card.exhibition {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
-}
-
 .event-catalog__body__card__title {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-radius: 0 0 15px 0;
-  padding: 10px;
-  font-size: 15px;
-  background-color: rgba(51, 51, 51, 0.3);
-  color: white;
+  font-size: 2rem;
+}
+
+.event-card {
+  display: block;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 290px;
+  border-radius: 15px;
+  margin: 7px;
+  padding: 1rem;
+  background-size: cover;
+  text-align: left;
+}
+
+.event-card__title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-card__copy {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: left;
+  padding-left: 0.5rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+.event-card__image {
+  width: 290px;
+  height: 290px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-card__image.event {
+  background-image: url(../images/index/event.png);
+}
+
+.event-card__image.stage {
+  background-image: url(../images/index/stage.png);
+}
+
+.event-card__image.exhibition {
+  background-image: url(../images/index/exhibition.png);
+}
+
+.event-card .event-card__title::before {
+  content: attr(data-en);
+  display: block;
+  color: red;
+  font-size: 1rem;
+}
+
+.event-card .event-card__title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background-color: red;
 }
 
 #randomImg {
@@ -436,6 +575,47 @@ body {
   background-image: url(../images/company-images/test1.jpeg);
   background-position: center center;
   background-size: cover;
+}
+
+.map {
+  width: 100%;
+}
+
+.map-size-img {
+  display: block;
+  margin: 1rem auto 5rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+.map-size-img.event {
+  max-width: 400px;
+}
+
+.map-size-img.pamphlet {
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.map-size-flex {
+  width: 100%;
+  margin: 0 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.map-size-flex__item {
+  width: 95%;
+  max-width: 400px;
+  margin: 1rem;
 }
 
 /* pages */
@@ -449,23 +629,62 @@ body {
 .news__body {
   border: solid #333;
   border-width: 1px 0;
+  height: 250px;
+  overflow: scroll;
+  text-align: left;
 }
 
-.news__body__list {
-  list-style: none;
+.tag {
+  margin: 0 1rem;
+  padding: 0 0.5rem 0.1rem;
+  border-radius: 5px;
+  color: #fff;
 }
 
-.news__body__list__item {
-  margin: 0 1rem 2rem;
+.otoshimono {
+  /* 当日連絡 */
+  background-color: red;
 }
 
-.news__body__list__item:first-child {
-  margin: 2rem 1rem;
+.new {
+  /* 更新 */
+  background-color: #3838b7;
 }
 
-.news__body__link {
-  text-align: right;
-  margin: 0 1rem 1rem 0;
+.acd-check {
+  display: none;
+}
+
+.acd-label {
+  color: #333;
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.acd-content {
+  font-size: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  width: 90%;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  visibility: hidden;
+}
+
+.acd-check:checked + .acd-label + .acd-content {
+  margin: 0 auto;
+  padding: 0.5rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  opacity: 1;
+  visibility: visible;
+  line-height: 2.5rem;
 }
 
 /* parts */
@@ -515,15 +734,15 @@ body {
 }
 
 .intro-card.event {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/bingo.jpg);
 }
 
 .intro-card.stage {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/guest.jpg);
 }
 
 .intro-card.exhibition {
-  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.JPG);
+  background-image: linear-gradient(-45deg, rgba(35, 0, 0, 0.7) 10%, rgba(230, 35, 20, 0.7) 40%, rgba(245, 230, 105, 0.7) 90%), url(../images/grobal.jpg);
 }
 
 .intro-card.futter {

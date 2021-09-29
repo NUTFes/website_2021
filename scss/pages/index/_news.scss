@@ -1,23 +1,54 @@
 .news {
-    display: block;
-    width: 85%;
-    font-size: 1.5rem;
-    @include Block;
-    &__body {
-        border: solid #333;
-        border-width: 1px 0 ;
-        &__list {
-            list-style: none;
-            &__item {
-                margin: 0 1rem 2rem;
-                &:first-child {
-                    margin: 2rem 1rem;
-                }
-            } 
-        }
-        &__link {
-            text-align: right;
-            margin: 0 1rem 1rem 0;
-        }
-    }
+  display: block;
+  width: 85%;
+  font-size: 1.5rem;
+  @include Block;
+  &__body {
+    border: solid #333;
+    border-width: 1px 0;
+    height: 250px;
+    overflow: scroll;
+    text-align: left;
+  }
+}
+.tag {
+  margin: 0 1rem;
+  padding: 0 0.5rem 0.1rem;
+  border-radius: 5px;
+  color: #fff;
+}
+.otoshimono {/* 当日連絡 */
+  background-color: red;
+}
+.new {/* 更新 */
+  background-color: #3838b7;
+}
+.acd-check{
+  display: none;
+}
+.acd-label{
+  color: #333;
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.acd-content{
+  font-size: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  border: 1px solid #333;
+  width: 90%;
+  height: 0;
+  opacity: 0;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  margin: 0 auto;
+  padding: 0.5rem;
+  height: max-content;
+  opacity: 1;
+  visibility: visible;
+  line-height: 2.5rem;  
 }

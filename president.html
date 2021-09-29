@@ -31,11 +31,11 @@
         <!--ここからメニュー-->
         <div class="menu-content">
           <ul>
-            <li><a href="#">トップページ</a></li>
-            <li><a href="#">会場マップ</a></li>
-            <li><a href="#">当日スケジュール</a></li>
-            <li><a href="#">代表挨拶</a></li>
-            <li><a href="#">協賛企業紹介</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="map.html">会場マップ</a></li>
+            <li><a href="schedule.html">当日スケジュール</a></li>
+            <li><a href="president.html">代表挨拶</a></li>
+            <li><a href="company.html">協賛企業紹介</a></li>
             <!-- <li><a href="#">アクセス</a></li> -->
           </ul>
         </div>
@@ -43,7 +43,7 @@
       </div>
     </header>
 
-    <div class="hero">
+    <div class="hero president">
       <div class="hero__txt">
         <h2 class="hero__txt__title">代表挨拶</h2>
       </div>
@@ -51,7 +51,7 @@
 
     <div class="wrapper">
       <!-- 学長 -->
-      <div class="greeting">
+      <div class="greeting shadow-card">
         <img class="greeting__image" src="./images/president/president.png" alt="鎌土重晴学長の写真">
         <div class="greeting__header">
           <p class="greeting__header__position">長岡技術科学大学 学長</p>
@@ -68,20 +68,24 @@
         </p>
       </div><!-- greetingの終わり -->
       <!-- 委員長 -->
-      <div class="greeting">
+      <div class="greeting shadow-card">
         <img class="greeting__image" src="./images/president/chairman.jpg" alt="技大祭実行委員長 水上">
         <div class="greeting__header">
           <p class="greeting__header__position">技大祭実行委員長</p>
           <h3 class="greeting__header__name line">水上 椋介</h3>
         </div>
+        <p class="greeting__subtitle">
+          新しい技大祭 いざ「飛翔のトキ」
+        </p>
         <p class="greeting__copy">
-          &nbsp;こんにちは！第40回技大祭実行委員会委員長を務めております、情報・経営システム工学専攻１年の水上です。<br>
-          &nbsp;今回のテーマは「飛翔のトキ」です！第40回となる節目のの“時”を迎え、さらにこの先の第50回、60回に向けて大きく羽ばたいていきたい。そして、新潟の県鳥であるの“朱鷺”のように、地元の方々から愛される技大祭になっていきたい<span style="letter-spacing: -0.2em;">—</span>—そのような思いを込め、テーマを「飛翔のトキ」としました。<br>
-          &nbsp;昨年度は新型コロナウイルスの影響により、中止となってしまった技大祭ですが、本年度は必ず開催するためにも、長岡技大現地で行うオフラインでの開催と、インターネット配信によるオンラインでの開催を並行して行います。<br>
-          &nbsp;しかし、オフラインでの開催は残念ながら、感染拡大防止のため技大生、技大教員のみ参加可能となってしまいました。一般の方は長岡技大には来場せずに、オンラインでご来場いただくようお願いします。<br>
-          &nbsp;オフラインでは、技大祭実行委員による企画やサークルの発表・展示などにご参加いただけます。また、オンラインでは、長岡技大のサークルや留学生などによる発表、化学ショーなどをインターネット上でご覧いただけます。<br>
-          &nbsp;私たち技大祭実行委員会一同は第40回技大祭を、一般の皆様や技大生、すべての人に楽しんでいただけるイベントにしていきます。そして、新しい技大祭として羽ばたいていきます。<br>
-          &nbsp;多くの皆様のご来場を、心よりお待ちしております！
+          &nbsp;今回のテーマは「飛翔のトキ」です。このテーマには、第40回となる節目の”時”を迎え、「ここで終わらない、さらに大きく羽ばたいていこう」という心意気、そして新潟の県鳥である”朱鷺”のように、地域の方々から長く愛される技大祭になっていきたいという思いが込められています。<br>
+          &nbsp;昨年度は新型コロナウイルスの影響により、中止となってしまった技大祭ですが、本年度はコロナ禍の中において、感染拡大とならないように最大限の注意を行って開催するために、インターネット配信による一般の方が参加できるオンラインでの開催と、長岡技大での現地開催を並行して行います。<br>
+          &nbsp;しかし、残念ながら、現地開催は感染拡大防止のため技大生、技大教職員のみ参加可能となってしまいました。<br>
+          &nbsp;一般の方は長岡技大には来場せずに、オンラインでご参加いただきますようお願いいたします。<br>
+          &nbsp;オンラインでは、長岡技大のサークルや留学生などの発表、化学ショーなどをインターネット上でご覧いただけます。<br>
+          &nbsp;技大生、技大教職員の方は、現地で技大祭実行委員による企画やサークルの発表・展示などにご参加いただけます。
+          &nbsp;技大祭実行委員会一同は第40回技大祭を、一般の皆様や技大生、すべての方に楽しんでいただけるイベントにしていきます。そして、新しい技大祭として羽ばたいていきます。<br>
+          &nbsp;多くの皆様のご参加・ご来場を、心よりお待ちしております！
         </p>
 
       </div><!-- greetingの終わり -->
@@ -93,11 +97,9 @@
         imgList = new Array();
         // バナー画像と画像に埋め込むリンクの一覧
         imgList = [
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/banner1.png"></a>',
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/test1.jpeg"></a>',
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/test2.jpeg"></a>',
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/test3.jpeg"></a>',
-        ]
+      '<img src="./images/company-images/banner1.png">',
+      '<a href="https://pamphlet.nutfes.net/"><img src="./images/company-images/banner2.png"></a>',
+      ]
         // バナー画像をランダムに選出し，idで紐づいたdiv内にHTMLを書き出す関数
         const imgChange = () => {
           r = Math.floor(Math.random() * imgList.length); // 1から画像の総数の幅で乱数生成
@@ -115,12 +117,12 @@
 
     <footer>
       <div class="footer"><!-- none -->
-        <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
+        <a href="index.html"><img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ"></a>
         <ul class="footer__list">
-          <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
-          <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
-          <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
-          <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
+          <li class="footer__list__item"><a href="map.html"><p>会場マップ</p></a></li>
+          <li class="footer__list__item"><a href="schedule.html"><p>当日スケジュール</p></a></li>
+          <li class="footer__list__item"><a href="president.html"><p>代表挨拶</p></a></li>
+          <li class="footer__list__item"><a href="company.html"><p>協賛企業紹介</p></a></li>
           <!-- <li class="footer__list__item"><a href=""><p>アクセス</p></a></li> -->
         </ul>
         <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>

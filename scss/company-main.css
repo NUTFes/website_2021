@@ -131,8 +131,8 @@ html {
 .wrapper {
   width: 97vw;
   min-width: 320px;
-  max-width: 1000px;
-  margin: -15px auto 3rem;
+  max-width: 1050px;
+  margin: 95vh auto 3rem;
   padding: 4rem 0;
   background-color: #fff;
   border-radius: 1.5rem;
@@ -309,29 +309,66 @@ body {
 
 .hero {
   width: 100%;
-  height: 30vh;
+  height: 100vh;
   background-image: none;
-  position: relative;
   color: white;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#14366f), to(#63e5c5));
   background-image: linear-gradient(0deg, #14366f 0%, #63e5c5 100%);
   z-index: -99;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  margin-top: -95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero.index {
+  background-image: url(../images/hero/top.png);
+}
+
+.hero.event {
+  background-image: url(../images/hero/event.png);
+}
+
+.hero.stage {
+  background-image: url(../images/hero/stage.png);
+}
+
+.hero.exhibition {
+  background-image: url(../images/hero/exhibition.png);
+}
+
+.hero.map {
+  background-image: url(../images/hero/map.png);
+}
+
+.hero.schedule {
+  background-image: url(../images/hero/schedule.png);
+}
+
+.hero.president {
+  background-image: url(../images/hero/president.png);
+}
+
+.hero.company {
+  background-image: url(../images/hero/top.png);
 }
 
 .hero__txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  margin: 0 auto 1.5rem;
-  vertical-align: center;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 2rem 1.5rem;
 }
 
 .hero__txt__title {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -346,7 +383,25 @@ body {
 .hero__txt__date {
   font-size: 2rem;
   padding: 0.5rem 2.4rem;
-  border: solid 1px white;
+  /* border: solid 1px white; */
+  background-color: red;
+}
+
+.shadow-card {
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+
+.shadow-card--pamphlet {
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto 6rem;
 }
 
 /* common */
@@ -360,6 +415,11 @@ body {
 .company-list {
   margin: 7rem 0;
   list-style: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 6rem auto;
+  padding: 3rem;
 }
 
 .company-list__item {

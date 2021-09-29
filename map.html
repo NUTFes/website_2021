@@ -32,11 +32,11 @@
         <!--ここからメニュー-->
         <div class="menu-content">
           <ul>
-            <li><a href="#">トップページ</a></li>
-            <li><a href="#">会場マップ</a></li>
-            <li><a href="#">当日スケジュール</a></li>
-            <li><a href="#">代表挨拶</a></li>
-            <li><a href="#">協賛企業紹介</a></li>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="map.html">会場マップ</a></li>
+            <li><a href="schedule.html">当日スケジュール</a></li>
+            <li><a href="president.html">代表挨拶</a></li>
+            <li><a href="company.html">協賛企業紹介</a></li>
             <!-- <li><a href="#">アクセス</a></li> -->
           </ul>
         </div>
@@ -44,19 +44,19 @@
       </div>
     </header>
 
-    <div class="hero">
+    <div class="hero map">
       <div class="hero__txt">
-        <h2 class="hero__txt__title">会場マップ</h2>
+        <h2 class="hero__txt__title">校内マップ</h2>
       </div>
     </div>
 
     <div class="wrapper">
       <div class="map">
         <h3 class="map__header line">会場マップ</h3>
-        <img class="map-size-img" src="./images/map/map-demo.svg" alt="">
+        <img class="map-size-img" src="./images/pamphlet/map-overall.png" alt="">
 
-        <h3 class="map__header line">構内マップ</h3>
-        <img class="map-size-img" src="./images/map/map-demo.svg" alt="">
+        <h3 class="map__header line">講義棟マップ</h3>
+        <img class="map-size-img" src="./images/pamphlet/map-lec.png" alt="">
       </div>
 
       <!-- バナー広告 -->
@@ -66,11 +66,9 @@
         imgList = new Array();
         // バナー画像と画像に埋め込むリンクの一覧
         imgList = [
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/banner1.png"></a>',
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/test1.jpeg"></a>',
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/test2.jpeg"></a>',
-          '<a href="https://oba18.github.io/"><img src="./images/company-images/test3.jpeg"></a>',
-        ]
+      '<img src="./images/company-images/banner1.png">',
+      '<a href="https://pamphlet.nutfes.net/"><img src="./images/company-images/banner2.png"></a>',
+      ]
         // バナー画像をランダムに選出し，idで紐づいたdiv内にHTMLを書き出す関数
         const imgChange = () => {
           r = Math.floor(Math.random() * imgList.length); // 1から画像の総数の幅で乱数生成
@@ -90,12 +88,12 @@
 
     <footer>
       <div class="footer"><!-- none -->
-        <img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ">
+        <a href="index.html"><img class="footer__logo" src="images/logo/logo-black-all.png" alt="技大祭のロゴ"></a>
         <ul class="footer__list">
-          <li class="footer__list__item"><a href=""><p>会場マップ</p></a></li>
-          <li class="footer__list__item"><a href=""><p>当日スケジュール</p></a></li>
-          <li class="footer__list__item"><a href=""><p>代表挨拶</p></a></li>
-          <li class="footer__list__item"><a href=""><p>協賛企業紹介</p></a></li>
+          <li class="footer__list__item"><a href="map.html"><p>会場マップ</p></a></li>
+          <li class="footer__list__item"><a href="schedule.html"><p>当日スケジュール</p></a></li>
+          <li class="footer__list__item"><a href="president.html"><p>代表挨拶</p></a></li>
+          <li class="footer__list__item"><a href="company.html"><p>協賛企業紹介</p></a></li>
           <!-- <li class="footer__list__item"><a href=""><p>アクセス</p></a></li> -->
         </ul>
         <p class="footer__copy"><small>&copy; 第40回技大祭実行委員会</small></p>
