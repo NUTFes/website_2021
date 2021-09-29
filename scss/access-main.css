@@ -394,6 +394,16 @@ body {
   padding: 2rem 1rem;
 }
 
+.shadow-card--pamphlet {
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto 6rem;
+}
+
 /* common */
 .line {
   position: relative;
