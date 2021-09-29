@@ -366,15 +366,22 @@ body {
   background-image: url(../images/hero/top.png);
 }
 
-.hero__txt {
+.hero__txt--index {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 2rem 1.5rem;
+}
+
+.hero__txt {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 2rem 2.5rem;
 }
 
 .hero__txt__title {
   font-size: 4.5rem;
   font-weight: 400;
   white-space: nowrap;
+  -webkit-text-decoration: underline red 5px;
+          text-decoration: underline red 5px;
 }
 
 .hero__txt__title__en {
