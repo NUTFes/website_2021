@@ -1,6 +1,9 @@
 .ch-link {
   font-size: 1.5rem;
   margin: 1rem;
+  &p:last-child {
+    margin-bottom: 4rem;
+  }
 }
 .youtube-container {
   margin-bottom: 3rem;
