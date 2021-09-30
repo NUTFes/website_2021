@@ -420,6 +420,10 @@ body {
   margin: 1rem;
 }
 
+.ch-linkp:last-child {
+  margin-bottom: 4rem;
+}
+
 .youtube-container {
   margin-bottom: 3rem;
   display: -webkit-box;

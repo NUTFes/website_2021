@@ -154,5 +154,21 @@
       background:url(../images/icon/caution.svg) no-repeat;
       background-size:contain;
     }
+    /* youtubeリンク */
+    &.youtube {
+      position: relative;
+      padding-left: 2em;
+    }
+    &.youtube:before {
+      position:absolute;
+      left:0;
+      top: 0;
+      content:"";
+      display:inline-block;
+      width:1.3em;
+      height:1.3em;
+      background:url(../images/icon/youtube.svg) no-repeat;
+      background-size:contain;
+    }
   }
 }
