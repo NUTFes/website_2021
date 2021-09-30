@@ -587,6 +587,7 @@ body {
   /* 時間:(time) */
   /* 一言コメント:(comment) */
   /* 注意点:(caution) */
+  /* youtubeリンク */
 }
 
 .detail-list__item.place {
@@ -671,6 +672,23 @@ body {
   width: 1.3em;
   height: 1.3em;
   background: url(../images/icon/caution.svg) no-repeat;
+  background-size: contain;
+}
+
+.detail-list__item.youtube {
+  position: relative;
+  padding-left: 2em;
+}
+
+.detail-list__item.youtube:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  background: url(../images/icon/youtube.svg) no-repeat;
   background-size: contain;
 }
 
