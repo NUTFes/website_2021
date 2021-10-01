@@ -488,6 +488,7 @@ body {
 }
 
 .event-catalog__body a {
+  color: #333;
   text-decoration: none;
 }
 
