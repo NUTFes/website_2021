@@ -17,11 +17,17 @@
   border-radius: 5px;
   color: #fff;
 }
-.otoshimono {/* 当日連絡 */
-  background-color: red;
-}
-.new {/* 更新 */
+.blue {/* "お知らせ,お願い,更新,事務連絡など" 通常通りの連絡用 */
   background-color: #3838b7;
+}
+.green {/* "落とし物" 落とし物が届いたこと */
+  background-color: green;
+}
+.orange {/* "企画" 各企画の開始連絡や配信の開始など */
+  background-color: orange;
+}
+.red {/* "変更" 各企画での時間変更や中止の連絡など急を要するとき */
+  background-color: red;
 }
 .acd-check{
   display: none;
