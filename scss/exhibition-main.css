@@ -507,7 +507,7 @@ body {
 .event-card-container__content {
   position: relative;
   display: block;
-  width: 95%;
+  width: 90%;
   min-width: 20px;
   max-width: 300px;
   height: -webkit-min-content;
